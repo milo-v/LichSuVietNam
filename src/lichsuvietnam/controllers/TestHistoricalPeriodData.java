@@ -1,4 +1,4 @@
-package controllers;
+package lichsuvietnam.controllers;
 
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -8,8 +8,8 @@ import java.util.List;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import models.HistoricalPeriod;
-import services.DataUpdate;
+import lichsuvietnam.models.HistoricalPeriod;
+import lichsuvietnam.services.DataUpdate;
 
 public class TestHistoricalPeriodData {
 	public static void main(String[] args) {

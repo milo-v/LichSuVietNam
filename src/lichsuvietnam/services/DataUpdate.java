@@ -1,6 +1,6 @@
-package services;
+package lichsuvietnam.services;
 
-import webscraper.HistoricalPeriodScraper;
+import lichsuvietnam.webscraper.HistoricalPeriodScraper;
 
 public class DataUpdate {
 	public void update() {

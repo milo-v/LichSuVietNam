@@ -1,4 +1,4 @@
-package webscraper;
+package lichsuvietnam.webscraper;
 
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
-import models.HistoricalPeriod;
+import lichsuvietnam.models.HistoricalPeriod;
 
 public class HistoricalPeriodScraper {
 	public void getData(String url, String output) {

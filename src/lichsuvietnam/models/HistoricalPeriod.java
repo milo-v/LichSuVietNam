@@ -1,4 +1,4 @@
-package models;
+package lichsuvietnam.models;
 
 public class HistoricalPeriod {
 	public HistoricalPeriod() {

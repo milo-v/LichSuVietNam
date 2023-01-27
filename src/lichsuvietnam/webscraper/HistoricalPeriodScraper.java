@@ -17,9 +17,8 @@ import lichsuvietnam.models.HistoricalPeriod;
 
 public class HistoricalPeriodScraper {
 	public void getData(String url, String output) {
-		Document document = null;
 		try {
-			document = Jsoup.connect(url).userAgent("Jsoup client").timeout(20000).get();
+			Document document = Jsoup.connect(url).userAgent("Jsoup client").timeout(20000).get();
 
 			Elements lstPeriods = document.select(
 					".table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr > td:nth-child(1)");
@@ -46,6 +45,7 @@ public class HistoricalPeriodScraper {
 			ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
 
 			writer.writeValue(Paths.get(output).toFile(), historicalPeriods);
+			System.out.println("Finished writing historical_periods.json");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

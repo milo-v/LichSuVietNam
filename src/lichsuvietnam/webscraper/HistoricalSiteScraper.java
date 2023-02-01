@@ -18,9 +18,9 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import lichsuvietnam.models.HistoricalSite;
 
 public class HistoricalSiteScraper {
-	public void getData(String url, String output) {
+	public void getData() {
 		try {
-			Document document = Jsoup.connect(url).userAgent("Jsoup client").timeout(30000).get();
+			Document document = Jsoup.connect("https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_t%C3%ADch_qu%E1%BB%91c_gia_Vi%E1%BB%87t_Nam").userAgent("Jsoup client").timeout(30000).get();
 			// System.out.println(document);
 			Elements lstSites = document.selectXpath(
 					"/html/body/div[1]/div/div[3]/main/div[3]/div[3]/div[1]/table[position()>1]/tbody/tr[position()>1]");
@@ -57,13 +57,14 @@ public class HistoricalSiteScraper {
 				if (historicalSite.getDesignatedDate().equals("")) {
 					historicalSite.setDesignatedDate("Không rõ");
 				}
+				historicalSite.setId("s" + historicalSites.size());
 				historicalSites.add(historicalSite);
 			}
 
 			ObjectMapper mapper = new ObjectMapper();
 			ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
 
-			writer.writeValue(Paths.get(output).toFile(), historicalSites);
+			writer.writeValue(Paths.get("data/historical_sites.json").toFile(), historicalSites);
 			System.out.println("Finished writing historical_sites.json");
 		} catch (IOException e) {
 			e.printStackTrace();

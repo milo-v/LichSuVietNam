@@ -1,11 +1,29 @@
 package lichsuvietnam.models;
 
 public class HistoricalFigure {
+	private String id;
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
 	private String name;
 	private String occupation;
 	private String period;
 	private String birth;
 	private String death;
+	private String relatedPeriodId;
+
+	public String getRelatedPeriodId() {
+		return relatedPeriodId;
+	}
+
+	public void setRelatedPeriodId(String relatedPeriodId) {
+		this.relatedPeriodId = relatedPeriodId;
+	}
 
 	public String getName() {
 		return name;

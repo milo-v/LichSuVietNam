@@ -39,6 +39,7 @@ public class FestivalScraper {
 				if (characteristics.get(1) != null) {
 					festival.setLocation(characteristics.get(1).text());
 				}
+				festival.setId("f" + festivals.size());
 				festivals.add(festival);
 			}
 			

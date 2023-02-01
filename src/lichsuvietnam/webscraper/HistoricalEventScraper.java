@@ -57,6 +57,7 @@ public class HistoricalEventScraper {
 				}
 
 				if (historicalEvent.getName() != null) {
+					historicalEvent.setId("e" + historicalEvents.size());
 					historicalEvents.add(historicalEvent);
 				}
 			}

@@ -1,64 +1,85 @@
 [ {
+  "id" : "p0",
   "name" : "Thời tiền sử",
   "timespan" : ""
 }, {
+  "id" : "p1",
   "name" : "Hồng Bàng",
   "timespan" : ""
 }, {
+  "id" : "p2",
   "name" : "An Dương Vương",
   "timespan" : ""
 }, {
+  "id" : "p3",
   "name" : "Bắc thuộc lần I",
   "timespan" : "207 TCN – 40"
 }, {
+  "id" : "p4",
   "name" : "Hai Bà Trưng",
   "timespan" : "40 – 43"
 }, {
+  "id" : "p5",
   "name" : "Bắc thuộc lần II",
   "timespan" : "43 – 541"
 }, {
+  "id" : "p6",
   "name" : "Nhà Tiền Lý",
   "timespan" : "541 – 602"
 }, {
+  "id" : "p7",
   "name" : "Bắc thuộc lần III",
   "timespan" : "602 – 905"
 }, {
+  "id" : "p8",
   "name" : "Tự chủ",
   "timespan" : "905 – 938"
 }, {
+  "id" : "p9",
   "name" : "Nhà Ngô",
   "timespan" : "938 – 967"
 }, {
+  "id" : "p10",
   "name" : "Nhà Đinh",
   "timespan" : "968 – 980"
 }, {
+  "id" : "p11",
   "name" : "Nhà Tiền Lê",
   "timespan" : "980 – 1009"
 }, {
+  "id" : "p12",
   "name" : "Nhà Lý",
   "timespan" : "1009 – 1225"
 }, {
+  "id" : "p13",
   "name" : "Nhà Trần",
   "timespan" : "1225 – 1400"
 }, {
+  "id" : "p14",
   "name" : "Nhà Hồ",
   "timespan" : "1400 – 1407"
 }, {
+  "id" : "p15",
   "name" : "Bắc thuộc lần IV",
   "timespan" : "1407 – 1427"
 }, {
+  "id" : "p16",
   "name" : "Nhà Hậu Lê Nhà Lê sơ (1428 – 1527) Lê trung hưng (1533 – 1789) Nhà Mạc (1527 – 1592) Trịnh–Nguyễn phân tranh",
   "timespan" : "1428 – 1527"
 }, {
+  "id" : "p17",
   "name" : "Nhà Tây Sơn",
   "timespan" : "1778 – 1802"
 }, {
+  "id" : "p18",
   "name" : "Nhà Nguyễn",
   "timespan" : "1802 – 1945) Pháp thuộc (1887 – 1945) Đế quốc Việt Nam (1945"
 }, {
+  "id" : "p19",
   "name" : "Chiến tranh Đông Dương",
   "timespan" : "1945 – 1975"
 }, {
+  "id" : "p20",
   "name" : "Cộng hòa Xã hội Chủ nghĩa Việt Nam",
   "timespan" : "từ 1976"
 } ]

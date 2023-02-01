@@ -16,9 +16,9 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import lichsuvietnam.models.HistoricalPeriod;
 
 public class HistoricalPeriodScraper {
-	public void getData(String url, String output) {
+	public void getData() {
 		try {
-			Document document = Jsoup.connect(url).userAgent("Jsoup client").timeout(20000).get();
+			Document document = Jsoup.connect("https://vi.wikipedia.org/wiki/L%E1%BB%8Bch_s%E1%BB%AD_Vi%E1%BB%87t_Nam").userAgent("Jsoup client").timeout(20000).get();
 
 			Elements lstPeriods = document.select(
 					".table > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr > td:nth-child(1)");
@@ -35,6 +35,7 @@ public class HistoricalPeriodScraper {
 				} else {
 					historicalPeriod.setTimespan("");
 				}
+				historicalPeriod.setId("p" + historicalPeriods.size());
 				historicalPeriods.add(historicalPeriod);
 			}
 			
@@ -44,7 +45,7 @@ public class HistoricalPeriodScraper {
 			ObjectMapper mapper = new ObjectMapper();
 			ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
 
-			writer.writeValue(Paths.get(output).toFile(), historicalPeriods);
+			writer.writeValue(Paths.get("data/historical_periods.json").toFile(), historicalPeriods);
 			System.out.println("Finished writing historical_periods.json");
 		} catch (Exception e) {
 			e.printStackTrace();

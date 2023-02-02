@@ -8,6 +8,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 class WikipediaHistoricalScraper implements HistoricalScraper {
@@ -204,7 +205,15 @@ class WikipediaHistoricalScraper implements HistoricalScraper {
                     festival.setLocation(characteristics.get(1).text());
                 }
                 if (characteristics.get(4) != null) {
-                	festival.setRelatedFigure(characteristics.get(4).text());
+                    ArrayList<String> relatedFigures = new ArrayList<>(
+                            Arrays.asList(characteristics.get(4).text().split(","))
+                    );
+                    relatedFigures.replaceAll(String::trim);
+
+                    // to be removed
+                    System.out.println(relatedFigures);
+
+                	festival.setRelatedFigures(relatedFigures);
                 }
                 festivals.add(festival);
             }

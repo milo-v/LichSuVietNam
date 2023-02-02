@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class HistoricalLinker {
 
-    public static void linkHistoricalFigureAndHistoricalEvent(ArrayList<HistoricalFigure> historicalFigures,
+    public void linkHistoricalFigureAndHistoricalEvent(ArrayList<HistoricalFigure> historicalFigures,
                                                               ArrayList<HistoricalEvent> historicalEvents) {
         for (HistoricalEvent historicalEvent : historicalEvents) {
             String eventName = historicalEvent.getName().toLowerCase();
@@ -19,7 +19,7 @@ public class HistoricalLinker {
         }
     }
 
-    public static void linkHistoricalFigureAndHistoricalPeriod(ArrayList<HistoricalFigure> historicalFigures,
+    public void linkHistoricalFigureAndHistoricalPeriod(ArrayList<HistoricalFigure> historicalFigures,
                                                                ArrayList<HistoricalPeriod> historicalPeriods) {
         for (HistoricalPeriod historicalPeriod : historicalPeriods) {
             for (HistoricalFigure historicalFigure : historicalFigures) {
@@ -32,12 +32,12 @@ public class HistoricalLinker {
         }
     }
 
-    public static void linkHistoricalFigureAndFestival(ArrayList<HistoricalFigure> historicalFigures,
+    public void linkHistoricalFigureAndFestival(ArrayList<HistoricalFigure> historicalFigures,
                                                        ArrayList<Festival> festivals) {
         for (Festival festival : festivals) {
             for (HistoricalFigure historicalFigure : historicalFigures) {
-                if (festival.getRelatedFigure().equals(historicalFigure.getName())) {
-                    festival.setRelatedFigureId(historicalFigure.getId());
+                if (festival.getRelatedFigures().contains(historicalFigure.getName())) {
+                    festival.getRelatedFigureIds().add(historicalFigure.getId());
                     historicalFigure.getRelatedFestivalIds().add(festival.getId());
                 }
             }

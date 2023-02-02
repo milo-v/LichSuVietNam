@@ -171,9 +171,10 @@ public class JsonHistoricalDao implements HistoricalDao {
         ArrayList<HistoricalSite> sites = scraper.scrapeHistoricalSite();
         ArrayList<Festival> festivals = scraper.scrapeFestival();
 
-        HistoricalLinker.linkHistoricalFigureAndHistoricalEvent(figures, events);
-        HistoricalLinker.linkHistoricalFigureAndHistoricalPeriod(figures, periods);
-        HistoricalLinker.linkHistoricalFigureAndFestival(figures, festivals);
+        HistoricalLinker linker = new HistoricalLinker();
+        linker.linkHistoricalFigureAndHistoricalEvent(figures, events);
+        linker.linkHistoricalFigureAndHistoricalPeriod(figures, periods);
+        linker.linkHistoricalFigureAndFestival(figures, festivals);
 
         this.saveHistoricalFigures(figures);
         this.saveHistoricalEvents(events);

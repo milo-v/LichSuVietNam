@@ -17,8 +17,11 @@ public class HistoricalLinkerTest {
         ArrayList<HistoricalEvent> events = scraper.scrapeHistoricalEvent();
         ArrayList<HistoricalPeriod> periods = scraper.scrapeHistoricalPeriod();
 
-        HistoricalLinker.linkHistoricalFigureAndHistoricalEvent(figures, events);
-        HistoricalLinker.linkHistoricalFigureAndHistoricalPeriod(figures, periods);
+        HistoricalLinker linker = new HistoricalLinker();
+
+        linker.linkHistoricalFigureAndHistoricalEvent(figures, events);
+        linker.linkHistoricalFigureAndHistoricalPeriod(figures, periods);
+
 
         JsonHistoricalDao jsonFile = new JsonHistoricalDao();
 

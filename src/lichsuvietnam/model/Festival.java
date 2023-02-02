@@ -1,14 +1,16 @@
 package lichsuvietnam.model;
 
+import java.util.ArrayList;
+
 public class Festival {
 	private static int idCounter = 0;
 	private String id;
 	private String name;
 	private String date;
 	private String location;
-	private String relatedFigure;
+	private ArrayList<String> relatedFigures = new ArrayList<>();
 
-	private String relatedFigureId;
+	private ArrayList<String> relatedFigureIds = new ArrayList<>();
 
 	public Festival() {
 		this.id = "festival-" + idCounter;
@@ -19,20 +21,16 @@ public class Festival {
 		return id;
 	}
 
-	public void setRelatedFigureId(String relatedFigureId) {
-		this.relatedFigureId = relatedFigureId;
+	public ArrayList<String> getRelatedFigureIds() {
+		return relatedFigureIds;
 	}
 
-	public String getRelatedFigureId() {
-		return relatedFigureId;
+	public ArrayList<String> getRelatedFigures() {
+		return relatedFigures;
 	}
 
-	public String getRelatedFigure() {
-		return relatedFigure;
-	}
-
-	public void setRelatedFigure(String relatedFigure) {
-		this.relatedFigure = relatedFigure;
+	public void setRelatedFigures(ArrayList<String> relatedFigures) {
+		this.relatedFigures = relatedFigures;
 	}
 
 	public String getName() {

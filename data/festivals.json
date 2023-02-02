@@ -1,0 +1,365 @@
+[ {
+  "id" : "festival-0",
+  "name" : "Lễ hội Đống Đa",
+  "date" : "5/1",
+  "location" : "Hà Nội, quận Đống Đa",
+  "relatedFigures" : [ "Nguyễn Huệ" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-1",
+  "name" : "Hội vật Liễu Đôi",
+  "date" : "5/1",
+  "location" : "Hà Nam, huyện Thanh Liêm",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-2",
+  "name" : "hội Gióng Sóc Sơn",
+  "date" : "6/1",
+  "location" : "Hà Nội, Sóc Sơn",
+  "relatedFigures" : [ "Thánh Gióng" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-3",
+  "name" : "Lễ hội Cổ Loa",
+  "date" : "6/1",
+  "location" : "Hà Nội, Đông Anh",
+  "relatedFigures" : [ "An Dương Vương" ],
+  "relatedFigureIds" : [ "figure-0" ]
+}, {
+  "id" : "festival-4",
+  "name" : "Lễ hội chùa Bái Đính",
+  "date" : "6/1",
+  "location" : "Ninh Bình, Gia Viễn",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-5",
+  "name" : "Chợ Viềng",
+  "date" : "7/1",
+  "location" : "Nam Định, Vụ Bản",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-6",
+  "name" : "Lễ hội đầm Ô Loan",
+  "date" : "7/1",
+  "location" : "Phú Yên, Ô Loan",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-7",
+  "name" : "Đại lễ Đức Chí Tôn",
+  "date" : "9/1",
+  "location" : "Tây Ninh, Đạo Cao Đài",
+  "relatedFigures" : [ "Đức Chí Tôn" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-8",
+  "name" : "Hội xuân Yên Tử",
+  "date" : "10/1",
+  "location" : "Quảng Ninh, núi Yên Tử",
+  "relatedFigures" : [ "Trần Nhân Tông" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-9",
+  "name" : "Hội phết Hiền Quan",
+  "date" : "13/1",
+  "location" : "Phú Thọ, huyện Tam Nông",
+  "relatedFigures" : [ "Thiều Hoa công chúa", "Mộc trang đại vương" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-10",
+  "name" : "Hội Lim",
+  "date" : "13/1",
+  "location" : "Bắc Ninh, huyện Tiên Du",
+  "relatedFigures" : [ "Nguyễn Đình Diễn" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-11",
+  "name" : "Lễ hội chùa Hương",
+  "date" : "6/1",
+  "location" : "Hà Nội, huyện Mỹ Đức",
+  "relatedFigures" : [ "Quan Thế Âm Bồ Tát" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-12",
+  "name" : "Hội chùa Côn Sơn",
+  "date" : "15/1",
+  "location" : "Hải Dương, huyện Chí Linh",
+  "relatedFigures" : [ "Huyền Quang", "Nguyễn Trãi" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-13",
+  "name" : "Lễ hội làm chay",
+  "date" : "14/1",
+  "location" : "Long An, thị trấn Tầm Vu",
+  "relatedFigures" : [ "Đỗ Tường Phong", "Đỗ Tường Tự" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-14",
+  "name" : "Tết Nguyên tiêu",
+  "date" : "15/1",
+  "location" : "Nhiều quốc gia",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-15",
+  "name" : "Lễ hội chọi trâu",
+  "date" : "16/1",
+  "location" : "Vĩnh Phúc, huyện Lập Thạch",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-16",
+  "name" : "Hội Xuân núi Bà",
+  "date" : "4/1",
+  "location" : "Tây Ninh, Núi Bà Đen",
+  "relatedFigures" : [ "Linh Sơn Thánh Mẫu" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-17",
+  "name" : "Lễ hội đình Yên Phụ",
+  "date" : "10/2",
+  "location" : "Hà Nội, Hồ Tây",
+  "relatedFigures" : [ "Uy Linh Lang", "Vương Duy", "Vương Ba" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-18",
+  "name" : "Lễ hội Miếu Mạch Lũng",
+  "date" : "10/2",
+  "location" : "Hà Nội, Đông Anh",
+  "relatedFigures" : [ "Minh Mỗ Đại vương Thượng đẳng thần" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-19",
+  "name" : "Lễ hội Quán Thế Âm",
+  "date" : "19/2",
+  "location" : "Đà Nẵng, Ngũ Hành Sơn",
+  "relatedFigures" : [ "Quán Thế Âm Bồ Tát" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-20",
+  "name" : "Tiết Thanh minh",
+  "date" : "",
+  "location" : "",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-21",
+  "name" : "Hội đua voi",
+  "date" : "",
+  "location" : "Tây Nguyên",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-22",
+  "name" : "Tết Hàn thực",
+  "date" : "3/3",
+  "location" : "",
+  "relatedFigures" : [ "Giới Tử Thôi", "Tấn Văn Công" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-23",
+  "name" : "Hội Phủ Giầy",
+  "date" : "3/3",
+  "location" : "Nam Định, Vụ Bản",
+  "relatedFigures" : [ "Mẫu Liễu Hạnh" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-24",
+  "name" : "Lễ hội Điện Hòn Chén",
+  "date" : "2/3",
+  "location" : "Thừa Thiên Huế, huyện Hương Trà",
+  "relatedFigures" : [ "Thiên Y A Na" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-25",
+  "name" : "Lễ hội Chùa Thầy",
+  "date" : "3/3",
+  "location" : "Hà Tây, Quốc Oai",
+  "relatedFigures" : [ "Từ Đạo Hạnh" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-26",
+  "name" : "Lễ hội Hoa Lư",
+  "date" : "6/3",
+  "location" : "Ninh Bình, huyện Hoa Lư",
+  "relatedFigures" : [ "Đinh Bộ Lĩnh" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-27",
+  "name" : "Lễ hội đền Thái Vi",
+  "date" : "14/3",
+  "location" : "Ninh Bình, huyện Hoa Lư",
+  "relatedFigures" : [ "Trần Thái Tông", "Trần Thánh Tông", "Trần Nhân Tông", "Trần Anh Tông", "Hiển Từ Hoàng Thái Hậu" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-28",
+  "name" : "Lễ hội Nam Trì",
+  "date" : "8/3",
+  "location" : "Hưng Yên, huyện Ân Thi",
+  "relatedFigures" : [ "Lang Công", "Bảo Công", "Công chúa Hùng vương Lâu nương" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-29",
+  "name" : "Giỗ tổ Hùng Vương",
+  "date" : "10/3",
+  "location" : "Nhiều nơi ở Việt Nam",
+  "relatedFigures" : [ "Vua Hùng" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-30",
+  "name" : "Lễ hội đền Mẫu",
+  "date" : "10/3",
+  "location" : "Hưng Yên, Phố Hiến",
+  "relatedFigures" : [ "Dương Quý Phi" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-31",
+  "name" : "Lễ hội Làng cá Cát Bà",
+  "date" : "",
+  "location" : "Hải Phòng, huyện Cát Hải, Thị trấn Cát Bà",
+  "relatedFigures" : [ "Hồ Chí Minh" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-32",
+  "name" : "Hội Gióng Phù Đổng",
+  "date" : "7/4",
+  "location" : "Hà Nội, huyện Gia Lâm",
+  "relatedFigures" : [ "Thánh Gióng" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-33",
+  "name" : "Lễ Phật Đản",
+  "date" : "8/4",
+  "location" : "Nhiều quốc gia",
+  "relatedFigures" : [ "Phật Tất Đạt Đa" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-34",
+  "name" : "Lễ hội Chol Chnam Thmay",
+  "date" : "14/4",
+  "location" : "Nam Bộ",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-35",
+  "name" : "Lễ khao lề thế lính",
+  "date" : "18/3",
+  "location" : "Quảng Ngãi, huyện Lý Sơn",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-36",
+  "name" : "Lễ hội miếu Bà Chúa Xứ",
+  "date" : "23/4",
+  "location" : "Miếu Bà Chúa Xứ, Núi Sam, An Giang, Châu Đốc",
+  "relatedFigures" : [ "Bà Chúa Xứ" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-37",
+  "name" : "Tết Đoan ngọ",
+  "date" : "5/5",
+  "location" : "Nhiều quốc gia",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-38",
+  "name" : "Thất Tịch",
+  "date" : "7/7",
+  "location" : "Nhiều quốc gia",
+  "relatedFigures" : [ "Ngưu Lang", "Chức Nữ" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-39",
+  "name" : "Lễ Vu Lan, Tết Trung Nguyên",
+  "date" : "15/7",
+  "location" : "Nhiều quốc gia",
+  "relatedFigures" : [ "Bồ tát Mục Liên" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-40",
+  "name" : "Lễ hội Nghinh Ông (Quan Thánh Đế Quân)",
+  "date" : "",
+  "location" : "Phan Thiết (Bình Thuận)",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-41",
+  "name" : "Lễ hội Katê",
+  "date" : "",
+  "location" : "Bình Thuận",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-42",
+  "name" : "Lễ hội chọi trâu",
+  "date" : "9/8",
+  "location" : "Hải Phòng, Đồ Sơn",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-43",
+  "name" : "Tết Trung Thu",
+  "date" : "15/8",
+  "location" : "Nhiều quốc gia",
+  "relatedFigures" : [ "Hằng Nga", "Hậu Nghệ", "Đường Minh Hoàng", "Chú Cuội" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-44",
+  "name" : "Hội Đền Kiếp Bạc",
+  "date" : "15/8",
+  "location" : "Hải Dương, huyện Chí Linh",
+  "relatedFigures" : [ "Trần Hưng Đạo" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-45",
+  "name" : "Hội Yến Diêu Trì",
+  "date" : "15/8",
+  "location" : "Tây Ninh, Tòa Thánh Tây Ninh",
+  "relatedFigures" : [ "Cao Quỳnh Cư", "Phạm Công Tắc", "Cao Hoài Sang", "Nguyễn Thị Hiếu" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-46",
+  "name" : "Lễ hội Nghinh Ông (Cá Voi)",
+  "date" : "",
+  "location" : "Bình Thuận, Tiền Giang",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-47",
+  "name" : "Lễ hội AHDT Nguyễn Trung Trực",
+  "date" : "",
+  "location" : "Rạch Giá, Kiên Giang",
+  "relatedFigures" : [ "Nguyễn Trung Trực" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-48",
+  "name" : "Lễ hội Chùa Keo",
+  "date" : "13/9",
+  "location" : "Thái Bình, Vũ Thư",
+  "relatedFigures" : [ "Thiền sư Không Lộ" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-49",
+  "name" : "Tết cơm mới",
+  "date" : "15/10",
+  "location" : "Nhiều quốc gia",
+  "relatedFigures" : [ "" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-50",
+  "name" : "Lễ hội đền Nguyễn Công Trứ",
+  "date" : "13/11",
+  "location" : "Ninh Bình, huyện Kim Sơn",
+  "relatedFigures" : [ "Nguyễn Công Trứ" ],
+  "relatedFigureIds" : [ ]
+}, {
+  "id" : "festival-51",
+  "name" : "Tiễn Ông Táo về trời",
+  "date" : "23/12",
+  "location" : "Nhiều quốc gia",
+  "relatedFigures" : [ "Thổ Công", "Thổ địa", "Thổ kỳ" ],
+  "relatedFigureIds" : [ ]
+} ]

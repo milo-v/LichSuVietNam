@@ -1,10 +1,31 @@
 package lichsuvietnam.model;
 
 public class Festival {
+	private static int idCounter = 0;
+	private String id;
 	private String name;
 	private String date;
 	private String location;
 	private String relatedFigure;
+
+	private String relatedFigureId;
+
+	public Festival() {
+		this.id = "festival-" + idCounter;
+		++idCounter;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setRelatedFigureId(String relatedFigureId) {
+		this.relatedFigureId = relatedFigureId;
+	}
+
+	public String getRelatedFigureId() {
+		return relatedFigureId;
+	}
 
 	public String getRelatedFigure() {
 		return relatedFigure;

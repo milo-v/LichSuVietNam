@@ -173,6 +173,7 @@ public class JsonHistoricalDao implements HistoricalDao {
 
         HistoricalLinker.linkHistoricalFigureAndHistoricalEvent(figures, events);
         HistoricalLinker.linkHistoricalFigureAndHistoricalPeriod(figures, periods);
+        HistoricalLinker.linkHistoricalFigureAndFestival(figures, festivals);
 
         this.saveHistoricalFigures(figures);
         this.saveHistoricalEvents(events);

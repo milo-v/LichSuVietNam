@@ -32,6 +32,18 @@ public class HistoricalLinker {
         }
     }
 
+    public static void linkHistoricalFigureAndFestival(ArrayList<HistoricalFigure> historicalFigures,
+                                                       ArrayList<Festival> festivals) {
+        for (Festival festival : festivals) {
+            for (HistoricalFigure historicalFigure : historicalFigures) {
+                if (festival.getRelatedFigure().equals(historicalFigure.getName())) {
+                    festival.setRelatedFigureId(historicalFigure.getId());
+                    historicalFigure.getRelatedFestivalIds().add(festival.getId());
+                }
+            }
+        }
+    }
+
 
 
 }

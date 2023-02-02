@@ -1,4 +1,4 @@
-package lichsuvietnam.historicalfile;
+package lichsuvietnam.historical.file;
 
 import lichsuvietnam.models.*;
 

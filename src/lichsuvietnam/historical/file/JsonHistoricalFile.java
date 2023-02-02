@@ -1,4 +1,4 @@
-package lichsuvietnam.historicalfile;
+package lichsuvietnam.historical.file;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
@@ -22,8 +22,9 @@ public class JsonHistoricalFile implements HistoricalFile {
     public void writeHistoricalFigure(String path, ArrayList<HistoricalFigure> historicalFigures) {
         try {
             this.writer.writeValue(Paths.get(path).toFile(), historicalFigures);
-            System.out.println("Finished writing historical_events.json");
+            System.out.println("Finished writing " + path);
         } catch (IOException e) {
+            e.printStackTrace();
             System.out.println("Error in writeHistoricalFigure()");
         }
     }
@@ -32,7 +33,7 @@ public class JsonHistoricalFile implements HistoricalFile {
     public void writeHistoricalPeriod(String path, ArrayList<HistoricalPeriod> historicalPeriods) {
         try {
             this.writer.writeValue(Paths.get(path).toFile(), historicalPeriods);
-            System.out.println("Finished writing historical_periods.json");
+            System.out.println("Finished writing " + path);
         } catch (IOException e) {
             System.out.println("Error in writeHistoricalPeriod()");
         }
@@ -42,7 +43,7 @@ public class JsonHistoricalFile implements HistoricalFile {
     public void writeHistoricalEvent(String path, ArrayList<HistoricalEvent> historicalEvents) {
         try {
             this.writer.writeValue(Paths.get(path).toFile(), historicalEvents);
-            System.out.println("Finished writing historical_events.json");
+            System.out.println("Finished writing " + path);
         } catch (IOException e) {
             System.out.println("Error in writeHistoricalEvent()");
         }
@@ -52,7 +53,7 @@ public class JsonHistoricalFile implements HistoricalFile {
     public void writeHistoricalSite(String path, ArrayList<HistoricalSite> historicalSites) {
         try {
             this.writer.writeValue(Paths.get(path).toFile(), historicalSites);
-            System.out.println("Finished writing historical_sites.json");
+            System.out.println("Finished writing " + path);
         } catch (IOException e) {
             System.out.println("Error in writeHistoricalSite()");
         }
@@ -62,7 +63,7 @@ public class JsonHistoricalFile implements HistoricalFile {
     public void writeFestival(String path, ArrayList<Festival> festivals) {
         try {
             this.writer.writeValue(Paths.get(path).toFile(), festivals);
-            System.out.println("Finished writing festivals.json");
+            System.out.println("Finished writing " + path);
         } catch (IOException e) {
             System.out.println("Error in writeFestival()");
         }

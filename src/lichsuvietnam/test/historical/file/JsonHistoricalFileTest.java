@@ -1,4 +1,4 @@
-package lichsuvietnam.test.historicalfile;
+package lichsuvietnam.test.historical.file;
 
 import lichsuvietnam.historical.file.JsonHistoricalFile;
 import lichsuvietnam.webscraper.AllHistoricalScraper;

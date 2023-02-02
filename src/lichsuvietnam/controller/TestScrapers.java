@@ -8,8 +8,8 @@ import java.util.List;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import lichsuvietnam.models.HistoricalPeriod;
-import lichsuvietnam.services.DataUpdate;
+import lichsuvietnam.model.HistoricalPeriod;
+import lichsuvietnam.service.DataUpdate;
 
 public class TestScrapers {
 	public static void main(String[] args) {

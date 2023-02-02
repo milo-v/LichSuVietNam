@@ -1,30 +1,30 @@
-package lichsuvietnam.models;
+package lichsuvietnam.model;
 
 import java.util.ArrayList;
 
 public class HistoricalEvent {
 	private static int idCounter = 0;
-	private Integer id;
+	private String id;
 
 	private String name;
 	private String date;
 
-	private ArrayList<Integer> relatedHistoricalFigureIds = new ArrayList<>();
+	private ArrayList<String> relatedHistoricalFigureIds = new ArrayList<String>();
 
 	public HistoricalEvent() {
-		this.id = idCounter;
+		this.id = "event-" + idCounter;
 		++idCounter;
 	}
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
-	public ArrayList<Integer> getRelatedHistoricalFigureIds() {
+	public ArrayList<String> getRelatedHistoricalFigureIds() {
 		return relatedHistoricalFigureIds;
 	}
 
-	public void setRelatedHistoricalFigureIds(ArrayList<Integer> relatedHistoricalFigureIds) {
+	public void setRelatedHistoricalFigureIds(ArrayList<String> relatedHistoricalFigureIds) {
 		this.relatedHistoricalFigureIds = relatedHistoricalFigureIds;
 	}
 

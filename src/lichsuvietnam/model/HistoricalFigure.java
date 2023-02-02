@@ -1,4 +1,4 @@
-package lichsuvietnam.models;
+package lichsuvietnam.model;
 
 import java.util.ArrayList;
 
@@ -9,42 +9,41 @@ public class HistoricalFigure {
 	private String period;
 	private String birth;
 	private String death;
-
-	private Integer id;
+	private String id;
 
 	public HistoricalFigure() {
-		this.id = idCounter;
+		this.id = "figure-" + idCounter;
 		++idCounter;
 	}
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
-	private Integer relatedHistoricalPeriodId = Integer.valueOf(-1);
-	private ArrayList<Integer> relatedHistoricalEventIds = new ArrayList<>();
-	private ArrayList<Integer> relatedFestivalIds = new ArrayList<>();
+	private String relatedHistoricalPeriodId;
+	private ArrayList<String> relatedHistoricalEventIds = new ArrayList<String>();
+	private ArrayList<String> relatedFestivalIds = new ArrayList<String>();
 
-	public int getRelatedHistoricalPeriodId() {
+	public String getRelatedHistoricalPeriodId() {
 		return relatedHistoricalPeriodId;
 	}
 
-	public void setRelatedHistoricalPeriodId(Integer relatedHistoricalPeriodId) {
+	public void setRelatedHistoricalPeriodId(String relatedHistoricalPeriodId) {
 		this.relatedHistoricalPeriodId = relatedHistoricalPeriodId;
 	}
 
-	public ArrayList<Integer> getRelatedHistoricalEventIds() {
+	public ArrayList<String> getRelatedHistoricalEventIds() {
 		return relatedHistoricalEventIds;
 	}
 
-	public void setRelatedHistoricalEventIds(ArrayList<Integer> relatedHistoricalEventIds) {
+	public void setRelatedHistoricalEventIds(ArrayList<String> relatedHistoricalEventIds) {
 		this.relatedHistoricalEventIds = relatedHistoricalEventIds;
 	}
 
-	public ArrayList<Integer> getRelatedFestivalIds() {
+	public ArrayList<String> getRelatedFestivalIds() {
 		return relatedFestivalIds;
 	}
 
-	public void setRelatedFestivalIds(ArrayList<Integer> relatedFestivalIds) {
+	public void setRelatedFestivalIds(ArrayList<String> relatedFestivalIds) {
 		this.relatedFestivalIds = relatedFestivalIds;
 	}
 

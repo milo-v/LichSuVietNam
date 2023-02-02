@@ -1,8 +1,8 @@
-package lichsuvietnam.models;
+package lichsuvietnam.model;
 
-public class Festival {
+public class HistoricalSite {
 	private String name;
-	private String date;
+	private String designatedDate;
 	private String location;
 
 	public String getName() {
@@ -13,12 +13,12 @@ public class Festival {
 		this.name = name;
 	}
 
-	public String getDate() {
-		return date;
+	public String getDesignatedDate() {
+		return designatedDate;
 	}
 
-	public void setDate(String date) {
-		this.date = date;
+	public void setDesignatedDate(String designatedDate) {
+		this.designatedDate = designatedDate;
 	}
 
 	public String getLocation() {
@@ -28,5 +28,4 @@ public class Festival {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-
 }

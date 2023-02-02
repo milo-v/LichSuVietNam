@@ -1,7 +1,7 @@
-package lichsuvietnam.test.historical.file;
+package lichsuvietnam.test.service.file;
 
-import lichsuvietnam.historical.file.JsonHistoricalFile;
-import lichsuvietnam.webscraper.AllHistoricalScraper;
+import lichsuvietnam.service.file.JsonHistoricalFile;
+import lichsuvietnam.service.scraper.AllHistoricalScraper;
 
 public class JsonHistoricalFileTest {
     public static void main(String[] args) {

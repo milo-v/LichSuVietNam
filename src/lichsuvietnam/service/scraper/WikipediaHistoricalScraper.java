@@ -1,6 +1,6 @@
-package lichsuvietnam.webscraper;
+package lichsuvietnam.service.scraper;
 
-import lichsuvietnam.models.*;
+import lichsuvietnam.model.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -154,9 +154,9 @@ class WikipediaHistoricalScraper implements HistoricalScraper {
                 if (elements.size() > 0) {
                     String timespan = elements.get(0).text();
                     timespan = timespan.substring(1, timespan.length() - 1);
-                    historicalPeriod.setTimespan(timespan);
+                    historicalPeriod.setTimeSpan(timespan);
                 } else {
-                    historicalPeriod.setTimespan("");
+                    historicalPeriod.setTimeSpan("");
                 }
                 historicalPeriods.add(historicalPeriod);
             }

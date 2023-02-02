@@ -1,6 +1,6 @@
-package lichsuvietnam.webscraper;
+package lichsuvietnam.service.scraper;
 
-import lichsuvietnam.models.*;
+import lichsuvietnam.model.*;
 
 import java.util.ArrayList;
 

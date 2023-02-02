@@ -1,10 +1,10 @@
-package lichsuvietnam.historical.file;
+package lichsuvietnam.service.file;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
-import lichsuvietnam.models.*;
+import lichsuvietnam.model.*;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -21,7 +21,8 @@ public class JsonHistoricalFile implements HistoricalFile {
     @Override
     public void writeHistoricalFigure(String path, ArrayList<HistoricalFigure> historicalFigures) {
         try {
-            this.writer.writeValue(Paths.get(path).toFile(), historicalFigures);
+
+            this.writer.writeValue(Paths.get(path ).toFile(), historicalFigures);
             System.out.println("Finished writing " + path);
         } catch (IOException e) {
             e.printStackTrace();

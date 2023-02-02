@@ -13,7 +13,7 @@ module LichSuVietNam {
 	requires javafx.fxml;
 	requires javafx.controls;
 	
-	exports lichsuvietnam.models to com.fasterxml.jackson.databind;
+	exports lichsuvietnam.model to com.fasterxml.jackson.databind;
 	exports lichsuvietnam to javafx.graphics;
-    exports lichsuvietnam.historical.file to javafx.graphics;
+    exports lichsuvietnam.service.file to javafx.graphics;
 }

@@ -1,6 +1,6 @@
-package lichsuvietnam.webscraper;
+package lichsuvietnam.service.scraper;
 
-import lichsuvietnam.models.*;
+import lichsuvietnam.model.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

@@ -1,8 +1,8 @@
 package lichsuvietnam.test.webscraper;
 
-import lichsuvietnam.models.HistoricalEvent;
-import lichsuvietnam.models.HistoricalFigure;
-import lichsuvietnam.webscraper.AllHistoricalScraper;
+import lichsuvietnam.model.HistoricalEvent;
+import lichsuvietnam.model.HistoricalFigure;
+import lichsuvietnam.service.scraper.AllHistoricalScraper;
 
 import java.util.ArrayList;
 

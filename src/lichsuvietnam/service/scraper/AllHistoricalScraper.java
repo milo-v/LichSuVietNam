@@ -1,8 +1,9 @@
-package lichsuvietnam.webscraper;
+package lichsuvietnam.service.scraper;
 
-import lichsuvietnam.models.*;
+import lichsuvietnam.model.*;
 
 import java.util.ArrayList;
+
 
 public class AllHistoricalScraper implements HistoricalScraper {
     private ArrayList<HistoricalScraper> scrapers;

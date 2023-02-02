@@ -1,7 +1,6 @@
-package lichsuvietnam.test.webscraper;
+package lichsuvietnam.test.service.scraper;
 
 import lichsuvietnam.model.HistoricalEvent;
-import lichsuvietnam.model.HistoricalFigure;
 import lichsuvietnam.service.scraper.AllHistoricalScraper;
 
 import java.util.ArrayList;

@@ -191,7 +191,8 @@ class WikipediaHistoricalScraper implements HistoricalScraper {
             for (Element element : lstFestivals) {
                 // System.out.println(element);
                 List<Element> characteristics = element.getElementsByTag("td");
-                // System.out.println(characteristics);
+                System.out.println(characteristics);
+                System.out.println("--------------------------------");
                 Festival festival = new Festival();
                 if (characteristics.get(0) != null) {
                     festival.setDate(characteristics.get(0).text());
@@ -201,6 +202,9 @@ class WikipediaHistoricalScraper implements HistoricalScraper {
                 }
                 if (characteristics.get(1) != null) {
                     festival.setLocation(characteristics.get(1).text());
+                }
+                if (characteristics.get(4) != null) {
+                	festival.setRelatedFigure(characteristics.get(4).text());
                 }
                 festivals.add(festival);
             }

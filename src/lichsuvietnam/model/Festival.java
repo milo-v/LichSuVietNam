@@ -4,6 +4,15 @@ public class Festival {
 	private String name;
 	private String date;
 	private String location;
+	private String relatedFigure;
+
+	public String getRelatedFigure() {
+		return relatedFigure;
+	}
+
+	public void setRelatedFigure(String relatedFigure) {
+		this.relatedFigure = relatedFigure;
+	}
 
 	public String getName() {
 		return name;

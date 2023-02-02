@@ -36,6 +36,7 @@ public class JsonHistoricalFile implements HistoricalFile {
             this.writer.writeValue(Paths.get(path).toFile(), historicalPeriods);
             System.out.println("Finished writing " + path);
         } catch (IOException e) {
+        	e.printStackTrace();
             System.out.println("Error in writeHistoricalPeriod()");
         }
     }

@@ -15,4 +15,5 @@ module LichSuVietNam {
 	
 	exports lichsuvietnam.models to com.fasterxml.jackson.databind;
 	exports lichsuvietnam to javafx.graphics;
+    exports lichsuvietnam.historical.file to javafx.graphics;
 }

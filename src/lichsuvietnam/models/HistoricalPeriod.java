@@ -1,6 +1,9 @@
 package lichsuvietnam.models;
 
 public class HistoricalPeriod {
+	private String name;
+	private String timespan;
+
 	public HistoricalPeriod() {
 	}
 
@@ -8,9 +11,6 @@ public class HistoricalPeriod {
 		this.name = name;
 		this.timespan = timespan;
 	}
-
-	private String name;
-	private String timespan;
 
 	public String getName() {
 		return name;

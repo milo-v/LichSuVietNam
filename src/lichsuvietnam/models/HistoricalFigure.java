@@ -1,11 +1,52 @@
 package lichsuvietnam.models;
 
+import java.util.ArrayList;
+
 public class HistoricalFigure {
+	private static int idCounter = 0;
 	private String name;
 	private String occupation;
 	private String period;
 	private String birth;
 	private String death;
+
+	private Integer id;
+
+	public HistoricalFigure() {
+		this.id = idCounter;
+		++idCounter;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+	private Integer relatedHistoricalPeriodId = Integer.valueOf(-1);
+	private ArrayList<Integer> relatedHistoricalEventIds = new ArrayList<>();
+	private ArrayList<Integer> relatedFestivalIds = new ArrayList<>();
+
+	public int getRelatedHistoricalPeriodId() {
+		return relatedHistoricalPeriodId;
+	}
+
+	public void setRelatedHistoricalPeriodId(Integer relatedHistoricalPeriodId) {
+		this.relatedHistoricalPeriodId = relatedHistoricalPeriodId;
+	}
+
+	public ArrayList<Integer> getRelatedHistoricalEventIds() {
+		return relatedHistoricalEventIds;
+	}
+
+	public void setRelatedHistoricalEventIds(ArrayList<Integer> relatedHistoricalEventIds) {
+		this.relatedHistoricalEventIds = relatedHistoricalEventIds;
+	}
+
+	public ArrayList<Integer> getRelatedFestivalIds() {
+		return relatedFestivalIds;
+	}
+
+	public void setRelatedFestivalIds(ArrayList<Integer> relatedFestivalIds) {
+		this.relatedFestivalIds = relatedFestivalIds;
+	}
 
 	public String getName() {
 		return name;

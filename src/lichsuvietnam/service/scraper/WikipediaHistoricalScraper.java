@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class WikipediaHistoricalScraper implements HistoricalScraper {
+public class WikipediaHistoricalScraper implements HistoricalScraper {
     private final static String HISTORICAL_PERIOD_URL =
             "https://vi.wikipedia.org/wiki/L%E1%BB%8Bch_s%E1%BB%AD_Vi%E1%BB%87t_Nam";
     private final static String HISTORICAL_EVENT_URL =
@@ -21,11 +21,11 @@ class WikipediaHistoricalScraper implements HistoricalScraper {
     private final static String HISTORICAL_SITE_URL =
             "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_t%C3%ADch_qu%E1%BB%91c_gia_Vi%E1%BB%87t_Nam";
     @Override
-    public ArrayList<HistoricalFigure> scrapeHistoricalFigure() {
+    public ArrayList<HistoricalFigure> scrapeHistoricalFigures() {
         return new ArrayList<>();
     }
     @Override
-    public ArrayList<HistoricalEvent> scrapeHistoricalEvent() {
+    public ArrayList<HistoricalEvent> scrapeHistoricalEvents() {
         ArrayList<HistoricalEvent> historicalEvents = new ArrayList<>();
         try {
             Document document = Jsoup.connect(HISTORICAL_EVENT_URL)
@@ -83,7 +83,7 @@ class WikipediaHistoricalScraper implements HistoricalScraper {
         return historicalEvents;
     }
     @Override
-    public ArrayList<HistoricalSite> scrapeHistoricalSite() {
+    public ArrayList<HistoricalSite> scrapeHistoricalSites() {
         ArrayList<HistoricalSite> historicalSites = new ArrayList<>();
         try {
             Document document = Jsoup.connect(HISTORICAL_SITE_URL).userAgent("Jsoup client").timeout(30000).get();
@@ -138,7 +138,7 @@ class WikipediaHistoricalScraper implements HistoricalScraper {
         return historicalSites;
     }
     @Override
-    public ArrayList<HistoricalPeriod> scrapeHistoricalPeriod() {
+    public ArrayList<HistoricalPeriod> scrapeHistoricalPeriods() {
         ArrayList<HistoricalPeriod> historicalPeriods = new ArrayList<>();
 
         try {
@@ -179,7 +179,7 @@ class WikipediaHistoricalScraper implements HistoricalScraper {
         return historicalPeriods;
     }
     @Override
-    public ArrayList<Festival> scrapeFestival() {
+    public ArrayList<Festival> scrapeFestivals() {
         ArrayList<Festival> festivals = new ArrayList<>();
 
         try {
@@ -213,7 +213,7 @@ class WikipediaHistoricalScraper implements HistoricalScraper {
                     // to be removed
                     System.out.println(relatedFigures);
 
-                	festival.setRelatedFigures(relatedFigures);
+                	festival.setRelatedHistoricalFigureNames(relatedFigures);
                 }
                 festivals.add(festival);
             }

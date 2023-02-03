@@ -36,8 +36,8 @@ public class HistoricalLinker {
                                                        ArrayList<Festival> festivals) {
         for (Festival festival : festivals) {
             for (HistoricalFigure historicalFigure : historicalFigures) {
-                if (festival.getRelatedFigures().contains(historicalFigure.getName())) {
-                    festival.getRelatedFigureIds().add(historicalFigure.getId());
+                if (festival.getRelatedHistoricalFigureNames().contains(historicalFigure.getName())) {
+                    festival.getRelatedHistoricalFigureIds().add(historicalFigure.getId());
                     historicalFigure.getRelatedFestivalIds().add(festival.getId());
                 }
             }

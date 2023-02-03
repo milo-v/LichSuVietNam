@@ -8,6 +8,8 @@ import lichsuvietnam.model.*;
 import lichsuvietnam.service.linker.HistoricalLinker;
 import lichsuvietnam.service.scraper.AllHistoricalScraper;
 import lichsuvietnam.service.scraper.HistoricalScraper;
+import lichsuvietnam.service.scraper.NguoiKeSuHistoricalScraper;
+import lichsuvietnam.service.scraper.WikipediaHistoricalScraper;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -98,7 +100,7 @@ public class JsonHistoricalDao implements HistoricalDao {
     }
 
     @Override
-    public ArrayList<HistoricalSite> readHistoricalSite(String path) {
+    public ArrayList<HistoricalSite> getHistoricalSites(String path) {
         ArrayList<HistoricalSite> historicalSites = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
 
@@ -114,7 +116,7 @@ public class JsonHistoricalDao implements HistoricalDao {
     }
 
     @Override
-    public ArrayList<HistoricalEvent> readHistoricalEvents(String path) {
+    public ArrayList<HistoricalEvent> getHistoricalEvents(String path) {
         ArrayList<HistoricalEvent> historicalEvents = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
 
@@ -130,7 +132,7 @@ public class JsonHistoricalDao implements HistoricalDao {
     }
 
     @Override
-    public ArrayList<HistoricalPeriod> readHistoricalPeriods(String path) {
+    public ArrayList<HistoricalPeriod> getHistoricalPeriods(String path) {
         ArrayList<HistoricalPeriod> historicalPeriods = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
 
@@ -146,7 +148,7 @@ public class JsonHistoricalDao implements HistoricalDao {
     }
 
     @Override
-    public ArrayList<Festival> readFestivals(String path) {
+    public ArrayList<Festival> getFestivals(String path) {
         ArrayList<Festival> historicalFestivals = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
 
@@ -163,13 +165,16 @@ public class JsonHistoricalDao implements HistoricalDao {
 
     @Override
     public void updateAll() {
-        HistoricalScraper scraper = new AllHistoricalScraper();
+        AllHistoricalScraper scraper = new AllHistoricalScraper();
 
-        ArrayList<HistoricalFigure> figures = scraper.scrapeHistoricalFigure();
-        ArrayList<HistoricalEvent> events = scraper.scrapeHistoricalEvent();
-        ArrayList<HistoricalPeriod> periods = scraper.scrapeHistoricalPeriod();
-        ArrayList<HistoricalSite> sites = scraper.scrapeHistoricalSite();
-        ArrayList<Festival> festivals = scraper.scrapeFestival();
+        scraper.addHistoricalScraper(new WikipediaHistoricalScraper());
+        scraper.addHistoricalScraper(new NguoiKeSuHistoricalScraper());
+
+        ArrayList<HistoricalFigure> figures = scraper.scrapeHistoricalFigures();
+        ArrayList<HistoricalEvent> events = scraper.scrapeHistoricalEvents();
+        ArrayList<HistoricalPeriod> periods = scraper.scrapeHistoricalPeriods();
+        ArrayList<HistoricalSite> sites = scraper.scrapeHistoricalSites();
+        ArrayList<Festival> festivals = scraper.scrapeFestivals();
 
         HistoricalLinker linker = new HistoricalLinker();
         linker.linkHistoricalFigureAndHistoricalEvent(figures, events);

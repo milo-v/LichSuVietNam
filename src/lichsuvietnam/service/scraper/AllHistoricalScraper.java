@@ -3,61 +3,61 @@ package lichsuvietnam.service.scraper;
 import lichsuvietnam.model.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class AllHistoricalScraper implements HistoricalScraper {
-    private ArrayList<HistoricalScraper> scrapers;
+    private HashMap<Class<? extends HistoricalScraper>, HistoricalScraper> scrapers = new HashMap<>();
 
-    public AllHistoricalScraper() {
-        this.scrapers = new ArrayList<>();
-        this.scrapers.add(new NguoiKeSuHistoricalScraper());
-        this.scrapers.add(new WikipediaHistoricalScraper());
+    public void addHistoricalScraper(HistoricalScraper scraper) {
+        if (scrapers.putIfAbsent(scraper.getClass(), scraper) != null) {
+            System.out.println("Scraper's already in the map");
+        }
     }
-
     @Override
-    public ArrayList<HistoricalFigure> scrapeHistoricalFigure() {
+    public ArrayList<HistoricalFigure> scrapeHistoricalFigures() {
         ArrayList<HistoricalFigure> historicalFigures = new ArrayList<>();
 
-        for (HistoricalScraper scraper : scrapers) {
-            historicalFigures.addAll(scraper.scrapeHistoricalFigure());
+        for (HistoricalScraper scraper : scrapers.values()) {
+            historicalFigures.addAll(scraper.scrapeHistoricalFigures());
         }
 
         return historicalFigures;
     }
 
     @Override
-    public ArrayList<HistoricalEvent> scrapeHistoricalEvent() {
+    public ArrayList<HistoricalEvent> scrapeHistoricalEvents() {
         ArrayList<HistoricalEvent> historicalEvents = new ArrayList<>();
 
-        for (HistoricalScraper scraper : scrapers) {
-            historicalEvents.addAll(scraper.scrapeHistoricalEvent());
+        for (HistoricalScraper scraper : scrapers.values()) {
+            historicalEvents.addAll(scraper.scrapeHistoricalEvents());
         }
         return historicalEvents;
     }
 
     @Override
-    public ArrayList<HistoricalSite> scrapeHistoricalSite() {
+    public ArrayList<HistoricalSite> scrapeHistoricalSites() {
         ArrayList<HistoricalSite> historicalSites = new ArrayList<>();
-        for (HistoricalScraper scraper : scrapers){
-            historicalSites.addAll(scraper.scrapeHistoricalSite());
+        for (HistoricalScraper scraper : scrapers.values()){
+            historicalSites.addAll(scraper.scrapeHistoricalSites());
         }
         return historicalSites;
     }
 
     @Override
-    public ArrayList<HistoricalPeriod> scrapeHistoricalPeriod() {
+    public ArrayList<HistoricalPeriod> scrapeHistoricalPeriods() {
         ArrayList<HistoricalPeriod> historicalPeriods = new ArrayList<>();
-        for (HistoricalScraper scraper : scrapers){
-            historicalPeriods.addAll(scraper.scrapeHistoricalPeriod());
+        for (HistoricalScraper scraper : scrapers.values()){
+            historicalPeriods.addAll(scraper.scrapeHistoricalPeriods());
         }
         return historicalPeriods;
     }
 
     @Override
-    public ArrayList<Festival> scrapeFestival() {
+    public ArrayList<Festival> scrapeFestivals() {
         ArrayList<Festival> festivals = new ArrayList<>();
-        for (HistoricalScraper scraper : scrapers){
-            festivals.addAll(scraper.scrapeFestival());
+        for (HistoricalScraper scraper : scrapers.values()){
+            festivals.addAll(scraper.scrapeFestivals());
         }
         return festivals;
     }

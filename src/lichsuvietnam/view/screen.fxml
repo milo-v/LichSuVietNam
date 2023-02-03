@@ -49,12 +49,17 @@
                      <left>
                         <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" BorderPane.alignment="CENTER">
                            <children>
-                              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Vũ Minh Long 20200373">
+                              <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Vũ Minh Long 20200373">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Trần Vinh Khánh 20205208">
+                              <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Trần Vinh Khánh 20205208">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" text="Ngô Thị Lam 20205210">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
@@ -64,12 +69,7 @@
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Ngô Thị Lam 20205210">
-                                 <font>
-                                    <Font size="18.0" />
-                                 </font>
-                              </Label>
-                              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Nguyễn Xuân Phước 20205232">
+                              <Label alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" text="Nguyễn Xuân Phước 20205232">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
@@ -77,14 +77,14 @@
                                     <Insets />
                                  </VBox.margin>
                               </Label>
-                              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Cap Thành Duy 20205202">
+                              <Label alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" text="Cao Thành Duy 20205202">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="GV: Trịnh Tuấn Đạt">
+                              <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Giảng Viên: Trịnh Tuấn Đạt">
                                  <font>
-                                    <Font name="System Bold Italic" size="24.0" />
+                                    <Font name="System Bold Italic" size="21.0" />
                                  </font>
                               </Label>
                            </children>

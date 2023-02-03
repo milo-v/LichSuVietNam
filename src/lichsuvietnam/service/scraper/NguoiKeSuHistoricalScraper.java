@@ -10,12 +10,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-class NguoiKeSuHistoricalScraper implements HistoricalScraper {
+public class NguoiKeSuHistoricalScraper implements HistoricalScraper {
     private static final String HISTORICAL_FIGURE_URL =
             "https://nguoikesu.com/nhan-vat?start=";
 
     @Override
-    public ArrayList<HistoricalFigure> scrapeHistoricalFigure() {
+    public ArrayList<HistoricalFigure> scrapeHistoricalFigures() {
         ArrayList<HistoricalFigure> historicalFigures = new ArrayList<>();
         final int PAGE_NUM = 1451;
         for (int page = 0; page <= 10; page++) {
@@ -89,22 +89,22 @@ class NguoiKeSuHistoricalScraper implements HistoricalScraper {
     }
 
     @Override
-    public ArrayList<HistoricalEvent> scrapeHistoricalEvent() {
+    public ArrayList<HistoricalEvent> scrapeHistoricalEvents() {
         return new ArrayList<>();
     }
 
     @Override
-    public ArrayList<HistoricalSite> scrapeHistoricalSite() {
+    public ArrayList<HistoricalSite> scrapeHistoricalSites() {
         return new ArrayList<>();
     }
 
     @Override
-    public ArrayList<HistoricalPeriod> scrapeHistoricalPeriod() {
+    public ArrayList<HistoricalPeriod> scrapeHistoricalPeriods() {
         return new ArrayList<>();
     }
 
     @Override
-    public ArrayList<Festival> scrapeFestival() {
+    public ArrayList<Festival> scrapeFestivals() {
         return new ArrayList<>();
     }
 }

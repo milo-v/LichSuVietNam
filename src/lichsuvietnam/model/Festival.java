@@ -8,29 +8,31 @@ public class Festival {
 	private String name;
 	private String date;
 	private String location;
-	private ArrayList<String> relatedFigures = new ArrayList<>();
-
-	private ArrayList<String> relatedFigureIds = new ArrayList<>();
+	private ArrayList<String> relatedHistoricalFigureNames = new ArrayList<>();
+	private ArrayList<String> relatedHistoricalFigureIds = new ArrayList<>();
 
 	public Festival() {
 		this.id = "festival-" + idCounter;
 		++idCounter;
 	}
 
+	public void setRelatedHistoricalFigureNames(ArrayList<String> relatedHistoricalFigureNames) {
+		this.relatedHistoricalFigureNames = relatedHistoricalFigureNames;
+	}
+	public ArrayList<String> getRelatedHistoricalFigureNames() {
+		return relatedHistoricalFigureNames;
+	}
+
 	public String getId() {
 		return id;
 	}
 
-	public ArrayList<String> getRelatedFigureIds() {
-		return relatedFigureIds;
+	public ArrayList<String> getRelatedHistoricalFigureIds() {
+		return relatedHistoricalFigureIds;
 	}
 
-	public ArrayList<String> getRelatedFigures() {
-		return relatedFigures;
-	}
-
-	public void setRelatedFigures(ArrayList<String> relatedFigures) {
-		this.relatedFigures = relatedFigures;
+	public void setRelatedHistoricalFigureIds(ArrayList<String> relatedHistoricalFigureIds) {
+		this.relatedHistoricalFigureIds = relatedHistoricalFigureIds;
 	}
 
 	public String getName() {

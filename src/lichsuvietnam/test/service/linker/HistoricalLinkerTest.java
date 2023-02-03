@@ -13,9 +13,9 @@ public class HistoricalLinkerTest {
     public static void main(String[] args) {
         AllHistoricalScraper scraper = new AllHistoricalScraper();
 
-        ArrayList<HistoricalFigure> figures = scraper.scrapeHistoricalFigure();
-        ArrayList<HistoricalEvent> events = scraper.scrapeHistoricalEvent();
-        ArrayList<HistoricalPeriod> periods = scraper.scrapeHistoricalPeriod();
+        ArrayList<HistoricalFigure> figures = scraper.scrapeHistoricalFigures();
+        ArrayList<HistoricalEvent> events = scraper.scrapeHistoricalEvents();
+        ArrayList<HistoricalPeriod> periods = scraper.scrapeHistoricalPeriods();
 
         HistoricalLinker linker = new HistoricalLinker();
 

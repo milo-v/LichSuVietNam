@@ -11,17 +11,27 @@ public class HistoricalFigure {
 	private String death;
 	private String id;
 
+	private String relatedHistoricalPeriodId;
+	private ArrayList<String> relatedHistoricalEventIds = new ArrayList<String>();
+	private ArrayList<String> relatedFestivalIds = new ArrayList<String>();
+
+	private ArrayList<String> relatedHistoricalSiteIds = new ArrayList<>();
+
+
 	public HistoricalFigure() {
 		this.id = "figure-" + idCounter;
 		++idCounter;
 	}
 
+	public ArrayList<String> getRelatedHistoricalSiteIds() {
+		return relatedHistoricalSiteIds;
+	}
+
+
 	public String getId() {
 		return id;
 	}
-	private String relatedHistoricalPeriodId;
-	private ArrayList<String> relatedHistoricalEventIds = new ArrayList<String>();
-	private ArrayList<String> relatedFestivalIds = new ArrayList<String>();
+
 
 	public String getRelatedHistoricalPeriodId() {
 		return relatedHistoricalPeriodId;

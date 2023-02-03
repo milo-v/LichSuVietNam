@@ -44,6 +44,20 @@ public class HistoricalLinker {
         }
     }
 
+    public void linkHistoricalFigureAndHistoricalSites(ArrayList<HistoricalFigure> historicalFigures,
+                                                       ArrayList<HistoricalSite> historicalSites) {
+        for (HistoricalSite historicalSite : historicalSites) {
+            String siteName = historicalSite.getName().toLowerCase();
+            for (HistoricalFigure historicalFigure : historicalFigures) {
+                String figureName = historicalFigure.getName().toLowerCase();
+                if (siteName.contains(figureName)) {
+                    historicalFigure.getRelatedHistoricalSiteIds().add(historicalSite.getId());
+                    historicalSite.getRelatedHistoricalFigureIds().add(historicalFigure.getId());
+                }
+            }
+        }
+    }
+
 
 
 }

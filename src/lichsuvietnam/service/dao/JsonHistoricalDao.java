@@ -7,7 +7,6 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import lichsuvietnam.model.*;
 import lichsuvietnam.service.linker.HistoricalLinker;
 import lichsuvietnam.service.scraper.AllHistoricalScraper;
-import lichsuvietnam.service.scraper.HistoricalScraper;
 import lichsuvietnam.service.scraper.NguoiKeSuHistoricalScraper;
 import lichsuvietnam.service.scraper.WikipediaHistoricalScraper;
 
@@ -17,19 +16,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class JsonHistoricalDao implements HistoricalDao {
-    private static String figurePath = "data/historical_figures.json";
-    private static String eventPath = "data/historical_events.json";
-    private static String periodPath = "data/historical_periods.json";
-    private static String sitePath = "data/historical_sites.json";
-    private static String festivalPath = "data/festivals.json";
+    private static String FIGURE_PATH = "data/historical_figures.json";
+    private static String EVENT_PATH = "data/historical_events.json";
+    private static String PERIOD_PATH = "data/historical_periods.json";
+    private static String SITE_PATH = "data/historical_sites.json";
+    private static String FESTIVAL_PATH = "data/festivals.json";
 
     @Override
     public void saveHistoricalFigures(ArrayList<HistoricalFigure> historicalFigures) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
         try {
-            writer.writeValue(Paths.get(figurePath).toFile(), historicalFigures);
-            System.out.println("Finished writing " + figurePath);
+            writer.writeValue(Paths.get(FIGURE_PATH).toFile(), historicalFigures);
+            System.out.println("Finished writing " + FIGURE_PATH);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -40,8 +39,8 @@ public class JsonHistoricalDao implements HistoricalDao {
         ObjectMapper mapper = new ObjectMapper();
         ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
         try {
-            writer.writeValue(Paths.get(periodPath).toFile(), historicalPeriods);
-            System.out.println("Finished writing " + periodPath);
+            writer.writeValue(Paths.get(PERIOD_PATH).toFile(), historicalPeriods);
+            System.out.println("Finished writing " + PERIOD_PATH);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -52,8 +51,8 @@ public class JsonHistoricalDao implements HistoricalDao {
         ObjectMapper mapper = new ObjectMapper();
         ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
         try {
-            writer.writeValue(Paths.get(eventPath).toFile(), historicalEvents);
-            System.out.println("Finished writing " + eventPath);
+            writer.writeValue(Paths.get(EVENT_PATH).toFile(), historicalEvents);
+            System.out.println("Finished writing " + EVENT_PATH);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -64,8 +63,8 @@ public class JsonHistoricalDao implements HistoricalDao {
         ObjectMapper mapper = new ObjectMapper();
         ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
         try {
-            writer.writeValue(Paths.get(sitePath).toFile(), historicalSites);
-            System.out.println("Finished writing " + sitePath);
+            writer.writeValue(Paths.get(SITE_PATH).toFile(), historicalSites);
+            System.out.println("Finished writing " + SITE_PATH);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -76,8 +75,8 @@ public class JsonHistoricalDao implements HistoricalDao {
         ObjectMapper mapper = new ObjectMapper();
         ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
         try {
-            writer.writeValue(Paths.get(festivalPath).toFile(), festivals);
-            System.out.println("Finished writing " + festivalPath);
+            writer.writeValue(Paths.get(FESTIVAL_PATH).toFile(), festivals);
+            System.out.println("Finished writing " + FESTIVAL_PATH);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,0 +1,786 @@
+[ {
+  "id" : "event-158",
+  "name" : "Văn hóa Soi Nhụ",
+  "date" : "25.000 TCN–7.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-159",
+  "name" : "Văn hóa Ngườm",
+  "date" : "23.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-160",
+  "name" : "Văn hóa Tràng An",
+  "date" : "23.000 TCN–1.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-161",
+  "name" : "Văn hóa Sơn Vi",
+  "date" : "20.000 TCN–12.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-162",
+  "name" : "Văn hóa Hòa Bình",
+  "date" : "12.000 TCN–10.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-163",
+  "name" : "Văn hóa Bắc Sơn",
+  "date" : "10.000 TCN - 8.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-164",
+  "name" : "Văn hóa Quỳnh Văn",
+  "date" : "8.000 TCN - 6.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-165",
+  "name" : "Văn hóa Cái Bèo",
+  "date" : "7.000 TCN - 5.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-166",
+  "name" : "Văn hóa Đa Bút",
+  "date" : "6.000 TCN - 5.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-167",
+  "name" : "Văn hóa Hạ Long",
+  "date" : "3.000 TCN–1.500 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-168",
+  "name" : "Văn hóa Phùng Nguyên",
+  "date" : "2.000 TCN–1.500 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-169",
+  "name" : "Văn hóa Tiền Sa Huỳnh",
+  "date" : "2.000 TCN–1.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-170",
+  "name" : "Văn hóa Đồng Đậu",
+  "date" : "1.500 TCN–1.000 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-171",
+  "name" : "Văn hóa Gò Mun",
+  "date" : "1.000 TCN - 600 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-172",
+  "name" : "Văn hóa Sa Huỳnh",
+  "date" : "1.000 TCN - 200",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-173",
+  "name" : "Văn hóa Đồng Nai",
+  "date" : "1.000 TCN - 0",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-174",
+  "name" : "Văn hóa Đông Sơn",
+  "date" : "700 TCN–100",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-175",
+  "name" : "Văn hóa Óc Eo",
+  "date" : "1 - 630",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-176",
+  "name" : "vua Hùng thành lập quốc gia Văn Lang",
+  "date" : "Thế kỉ VII TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-177",
+  "name" : "An Dương Vương thôn tính Văn Lang, thành lập quốc gia Âu Lạc",
+  "date" : "207 TCN",
+  "relatedHistoricalFigureIds" : [ "figure-5" ]
+}, {
+  "id" : "event-178",
+  "name" : "Chiến tranh Tần-Việt",
+  "date" : "218 TCN - 207 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-179",
+  "name" : "Triệu Đà xâm lược nước Âu Lạc, sáp nhập vào quốc gia Nam Việt",
+  "date" : "179 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-180",
+  "name" : "Chiến tranh Hán-Nam Việt",
+  "date" : "111 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-181",
+  "name" : "nhà Hán thôn tính Nam Việt",
+  "date" : "111 TCN",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-182",
+  "name" : "khởi nghĩa Hai Bà Trưng, Trưng Trắc thành lập quốc gia Lĩnh Nam, kinh đô đặt tại Mê Linh",
+  "date" : "40",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-183",
+  "name" : "Chiến tranh Lĩnh Nam - Đông Hán",
+  "date" : "42 - 43",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-184",
+  "name" : "Đông Hán thôn tính Lĩnh Nam",
+  "date" : "43",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-185",
+  "name" : "Khởi nghĩa Chu Đạt",
+  "date" : "156–160",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-186",
+  "name" : "Khởi nghĩa Lương Long",
+  "date" : "178–181",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-187",
+  "name" : "Khu Liên khởi nghĩa, tách quận Nhật Nam thành lập quốc gia Lâm Ấp",
+  "date" : "192",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-188",
+  "name" : "Tôn Quyền xưng đế, lập nước Đông Ngô, ly khai nhà Hán",
+  "date" : "23 tháng 6 năm 229",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-189",
+  "name" : "Khởi nghĩa Bà Triệu",
+  "date" : "246 - 248",
+  "relatedHistoricalFigureIds" : [ "figure-7" ]
+}, {
+  "id" : "event-190",
+  "name" : "Chiến tranh Tấn – Ngô",
+  "date" : "280",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-191",
+  "name" : "Lưu Dụ ép Tấn Cung Đế nhường ngôi, lập ra nhà Lưu Tống",
+  "date" : "420",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-192",
+  "name" : "Thứ sử Giao Châu Đàn Hòa Chi đánh Lâm Ấp, cướp châu báu rút về",
+  "date" : "436",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-193",
+  "name" : "khởi nghĩa Lý Trường Nhân",
+  "date" : "468 - 485",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-194",
+  "name" : "Tiêu Đạo Thành phế Lưu Chuẩn tự làm vua, thành lập nhà Nam Tề",
+  "date" : "479",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-195",
+  "name" : "Tiêu Diễn phế truất Tiêu Bảo Dung, thành lập nhà Lương",
+  "date" : "502",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-196",
+  "name" : "khởi nghĩa Lý Bí",
+  "date" : "541",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-197",
+  "name" : "Lý Bí thành lập quốc gia Vạn Xuân",
+  "date" : "544",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-198",
+  "name" : "Chiến tranh Tùy–Vạn Xuân",
+  "date" : "602",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-199",
+  "name" : "Lý Uyên tuyên bố thành lập nhà Đường tháng 5 Lý Uyên ép Dương Hựu nhường ngôi",
+  "date" : "tháng 3 năm 618",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-200",
+  "name" : "khởi nghĩa Lý Tự Tiên",
+  "date" : "687",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-201",
+  "name" : "khởi nghĩa Mai Hắc Đế",
+  "date" : "713 - 723",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-202",
+  "name" : "khởi nghĩa Phùng Hưng",
+  "date" : "776-791",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-203",
+  "name" : "Khúc Thừa Dụ xây dựng chính quyền tự chủ",
+  "date" : "905",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-204",
+  "name" : "Trận Bạch Đằng, Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng",
+  "date" : "938",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-205",
+  "name" : "Ngô Quyền xưng vương, kinh đô Cổ Loa",
+  "date" : "939",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-206",
+  "name" : "Loạn 12 sứ quân",
+  "date" : "944 - 968",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-207",
+  "name" : "Đinh Bộ Lĩnh xưng đế, thành lập quốc gia Đại Cồ Việt, kinh đô Hoa Lư",
+  "date" : "968",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-208",
+  "name" : "Đinh Bộ Lĩnh cho đúc Thái Bình hưng bảo, đồng tiền đầu tiên của Việt Nam",
+  "date" : "970",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-209",
+  "name" : "Đinh Bộ Lĩnh cùng con trai bị sát hại",
+  "date" : "979",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-210",
+  "name" : "Lê Hoàn lên ngôi vua, thành lập nhà Tiền Lê",
+  "date" : "980",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-211",
+  "name" : "Chiến tranh Tống - Việt",
+  "date" : "tháng 1 - tháng 4 năm 981",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-212",
+  "name" : "Lý Công Uẩn lên ngôi vua, thành lập nhà Lý",
+  "date" : "21 tháng 11 năm 1009",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-213",
+  "name" : "Lý Công Uẩn dời đô về Thăng Long",
+  "date" : "1010",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-214",
+  "name" : "Lý Thánh Tông lên ngôi, đổi tên nước từ Đại Cồ Việt thành Đại Việt",
+  "date" : "1054",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-215",
+  "name" : "Chiến tranh Việt-Chiêm, Đại Việt chiếm được 3 châu của Chiêm Thành",
+  "date" : "1069",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-216",
+  "name" : "Chiến tranh Tống-Việt",
+  "date" : "1075–1077",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-217",
+  "name" : "Trận Như Nguyệt, đẩy lùi quân xâm lược Tống",
+  "date" : "18 tháng 1 – 28 tháng 2 năm 1077",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-218",
+  "name" : "Lý Chiêu Hoàng nhường ngôi cho Trần Cảnh, thành lập nhà Trần",
+  "date" : "10 tháng 1 năm 1226",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-219",
+  "name" : "Chiến tranh Nguyên Mông–Đại Việt lần 1",
+  "date" : "1258",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-220",
+  "name" : "Hội nghị Bình Than, triệu họp vương hầu, trăm quan",
+  "date" : "1282",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-221",
+  "name" : "Hội nghị Diên Hồng, triệu họp bô lão cả nước",
+  "date" : "1284",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-222",
+  "name" : "Chiến tranh Nguyên Mông-Đại Việt lần 2",
+  "date" : "1285",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-223",
+  "name" : "Chiến tranh Nguyên Mông–Đại Việt lần 3",
+  "date" : "1287–1288",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-224",
+  "name" : "phát hành Thông Bảo hội sao theo chủ trương của Hồ Quý Ly, đây là tiền giấy đầu tiên của Việt Nam",
+  "date" : "1396",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-225",
+  "name" : "Hồ Quý Ly ép Trần Thuận Tông dời đô về Tây Đô",
+  "date" : "1397",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-226",
+  "name" : "Hồ Quý Ly lên ngôi, thành lập nhà Hồ, đổi tên nước thành Đại Ngu",
+  "date" : "22 tháng 3 năm 1400",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-227",
+  "name" : "Chiến tranh Việt-Chiêm",
+  "date" : "1400–1407",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-228",
+  "name" : "Chiến tranh Đại Ngu–Đại Minh",
+  "date" : "1406–1407",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-229",
+  "name" : "nhà Minh thôn tính Đại Ngu, đặt làm quận Giao Chỉ, trung tâm hành chính là Đông Quan",
+  "date" : "1407",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-230",
+  "name" : "nhà Hậu Trần bị nhà Minh đánh bại",
+  "date" : "1413",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-231",
+  "name" : "khởi nghĩa Lam Sơn",
+  "date" : "1418–1427",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-232",
+  "name" : "Lê Lợi thành lập quốc gia Đại Việt, đặt kinh đô tại Đông Kinh",
+  "date" : "29 tháng 4 năm 1428",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-233",
+  "name" : "Vụ án Lệ Chi viên",
+  "date" : "1442",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-234",
+  "name" : "Chính biến Thiên Hưng, Lê Thánh Tông lên ngôi",
+  "date" : "1459–1460",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-235",
+  "name" : "Chiến tranh Việt–Chiêm, miền bắc Chiêm Thành sáp nhập vào Đại Việt",
+  "date" : "1471",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-236",
+  "name" : "Chiến tranh Đại Việt–Lan Xang",
+  "date" : "1478–1480",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-237",
+  "name" : "biên soạn Luật Hồng Đức",
+  "date" : "1483",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-238",
+  "name" : "khởi nghĩa Trần Tuân",
+  "date" : "1511–1512",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-239",
+  "name" : "khởi nghĩa Trần Cảo",
+  "date" : "1516–1521",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-240",
+  "name" : "Khủng hoảng cuối nhà Lê sơ và nội chiến",
+  "date" : "1516-1526",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-241",
+  "name" : "Mạc Đăng Dung ép Lê Cung Hoàng nhường ngôi, lập lên nhà Mạc",
+  "date" : "1527",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-242",
+  "name" : "Nguyễn Kim lập Lê Ninh làm vua, tái lập nhà Lê, đóng đô tại Vạn Lại",
+  "date" : "1533",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-243",
+  "name" : "Chiến tranh Lê–Mạc",
+  "date" : "1533–1677",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-244",
+  "name" : "nhà Lê trung hưng đánh bại nhà Mạc, lên nắm quyền điều hành đất nước",
+  "date" : "1592",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-245",
+  "name" : "Lê Thế Tông dời đô về Đông Kinh",
+  "date" : "1597",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-246",
+  "name" : "Nguyễn Hoàng vào trấn thủ Thuận Hóa",
+  "date" : "1558",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-247",
+  "name" : "Trịnh – Nguyễn phân tranh",
+  "date" : "1627–1672",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-248",
+  "name" : "nhà Lê trung hưng đánh bại hoàn toàn nhà Mạc",
+  "date" : "1683",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-249",
+  "name" : "khởi nghĩa Tây Sơn",
+  "date" : "1771",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-250",
+  "name" : "chiến tranh Bình Nam",
+  "date" : "1774–1775",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-251",
+  "name" : "Nguyễn Ánh xưng vương",
+  "date" : "1777",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-252",
+  "name" : "Nguyễn Nhạc xưng Hoàng đế, đặt niên hiệu Thái Đức, lập lên nhà Tây Sơn, đặt kinh đô tại Quy Nhơn",
+  "date" : "1778",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-253",
+  "name" : "Nguyễn Huệ phá tan quân Xiêm tại Rạch Gầm – Xoài Mút",
+  "date" : "19 tháng 1 – 20 tháng 1 năm 1785",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-254",
+  "name" : "Nguyễn Nhạc từ bỏ đế hiệu, chỉ xưng Tây Sơn vương",
+  "date" : "1788",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-255",
+  "name" : "Trận Ngọc Hồi – Đống Đa, đẩy lui quân xâm lược nhà Thanh, nhà Hậu Lê sụp đổ",
+  "date" : "1789",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-256",
+  "name" : "Nguyễn Huệ qua đời, con trai Nguyễn Quang Toản lên ngôi",
+  "date" : "16 tháng 9 năm 1792",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-257",
+  "name" : "Nguyễn Ánh đánh bại nhà Tây Sơn, lên ngôi vua, đặt niên hiệu là Gia Long, lập lên nhà Nguyễn, đặt kinh đô tại Phú Xuân",
+  "date" : "1802",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-258",
+  "name" : "Nổi dậy Đá Vách",
+  "date" : "1803–1855",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-259",
+  "name" : "Nguyễn Ánh đổi tên nước thành Việt Nam",
+  "date" : "1804",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-260",
+  "name" : "Khởi nghĩa Phan Bá Vành",
+  "date" : "1821–1827",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-261",
+  "name" : "Chiến tranh Việt–Xiêm",
+  "date" : "1833–1834",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-262",
+  "name" : "Việt Nam thôn tính Chân Lạp, đặt làm Trấn Tây Thành",
+  "date" : "1836",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-263",
+  "name" : "Minh Mạng đổi tên nước thành Đại Nam",
+  "date" : "15 tháng 2 năm 1839",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-264",
+  "name" : "rút quân khỏi Trấn Tây Thành, Xiêm đặt Ang Duong lên ngôi, tái lập Chân Lạp",
+  "date" : "1841",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-265",
+  "name" : "Chiến tranh Pháp-Đại Nam",
+  "date" : "1858–1884",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-266",
+  "name" : "Bạo loạn ven biển",
+  "date" : "1861–1865",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-267",
+  "name" : "Chính biến chày vôi",
+  "date" : "1866",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-268",
+  "name" : "nhà Nguyễn cắt Nam Kỳ lục tỉnh nhượng cho Pháp",
+  "date" : "1867",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-269",
+  "name" : "Hòa ước Giáp Thân, kết thúc Chiến tranh Pháp–Đại Nam, triều đình nhà Nguyễn chấp nhận sự bảo hộ của Pháp",
+  "date" : "6 tháng 6 năm 1884",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-270",
+  "name" : "phong trào Cần Vương",
+  "date" : "1885–1895",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-271",
+  "name" : "thực dân Pháp thành lập Liên bang Đông Dương, gồm Bắc Kỳ, Trung Kỳ, Nam Kỳ và Campuchia, đặt thủ đô tại Sài Gòn",
+  "date" : "17 tháng 10 năm 1887",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-272",
+  "name" : "sáp nhập Lào vào Liên bang Đông Dương",
+  "date" : "3 tháng 10 năm 1893",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-273",
+  "name" : "sáp nhập Quảng Châu Loan vào Liên bang Đông Dương",
+  "date" : "12 tháng 4 năm 1898",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-274",
+  "name" : "Liên bang Đông Dương dời thủ đô về Hà Nội",
+  "date" : "1902",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-275",
+  "name" : "phong trào Duy Tân",
+  "date" : "1906–1908",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-276",
+  "name" : "phong trào chống sưu thuế Trung Kỳ",
+  "date" : "1908",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-277",
+  "name" : "khoảng 100.000 người Việt bị ép sang châu Âu chiến đấu cho Pháp trong Chiến tranh thế giới thứ nhất",
+  "date" : "1914–1918",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-278",
+  "name" : "khởi nghĩa Thái Nguyên",
+  "date" : "1917",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-279",
+  "name" : "Nguyễn Ái Quốc gửi Yêu sách của nhân dân An Nam tới Hội nghị Hòa bình Versailles",
+  "date" : "18 tháng 6 năm 1919",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-280",
+  "name" : "hợp nhất ba tổ chức cộng sản thành Đảng Cộng sản Việt Nam",
+  "date" : "3 tháng 2 năm 1930",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-281",
+  "name" : "phong trào Xô Viết Nghệ Tĩnh",
+  "date" : "1930–1931",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-282",
+  "name" : "khoảng 20.000 thanh niên Việt Nam bị cưỡng bức phục vụ Pháp trong chiến tranh thế giới thứ hai",
+  "date" : "1939",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-283",
+  "name" : "quân đội Nhật Bản tiến vào Đông Dương 25 tháng 9 chính phủ Pháp chấp nhận mọi yêu sách, chấp nhận việc chiếm đóng cùng giao quyền điều hành những căn cứ quân sự cho quân đội Nhật",
+  "date" : "30 tháng 8 năm 1940",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-284",
+  "name" : "Việt Nam Tuyên truyền Giải phóng quân được thành lập",
+  "date" : "22 tháng 12 năm 1944",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-285",
+  "name" : "Nhật đảo chính thực dân Pháp 11 thành lập Đế quốc Việt Nam, phụ thuộc Đế quốc Nhật Bản 14 tháng 8 - 30 tháng 8 cách mạng tháng Tám 23 tháng 8 Đế quốc Việt Nam sụp đổ 30 tháng 8 Bảo Đại thoái vị",
+  "date" : "tháng 3 năm 1945",
+  "relatedHistoricalFigureIds" : [ "figure-8" ]
+}, {
+  "id" : "event-286",
+  "name" : "Hồ Chí Minh tuyên bố độc lập, thành lập nước Việt Nam Dân chủ Cộng hòa 8 tháng 9 phát động phong trào Bình dân học vụ 23 tháng 9 quân Pháp nổ súng tại Sài Gòn, bắt đầu cuộc chiến tranh xâm lược Việt Nam lần 2 23 tháng 9 Trần Văn Giàu kêu gọi Nam Bộ kháng chiến",
+  "date" : "2 tháng 9 năm 1945",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-287",
+  "name" : "Tổng tuyển cử bầu Quốc hội đầu tiên 26 tháng 3 Pháp lập nên Cộng hòa Tự trị Nam Kỳ thuộc Liên hiệp Pháp, thủ đô Sài Gòn 14 tháng 9 Tạm ước Việt - Pháp 19 tháng 12 Hồ Chí Minh kêu gọi Toàn quốc kháng chiến",
+  "date" : "6 tháng 1 năm 1946",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-288",
+  "name" : "Chiến dịch Việt Bắc Thu - Đông 1947",
+  "date" : "7 tháng 10 - 22 tháng 12 năm 1947",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-289",
+  "name" : "Pháp lập nên Quốc gia Việt Nam, quốc trưởng Bảo Đại, thủ đô Sài Gòn",
+  "date" : "14 tháng 6 năm 1949",
+  "relatedHistoricalFigureIds" : [ "figure-8" ]
+}, {
+  "id" : "event-290",
+  "name" : "Mỹ bắt đầu can thiệp quân sự vào Việt Nam 16 tháng 9–17 tháng 10 Chiến dịch Biên giới",
+  "date" : "8 tháng 5 năm 1950",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-291",
+  "name" : "Chiến dịch Điện Biên Phủ 20 tháng 7 Hiệp định Genève, Pháp rút quân khỏi Việt Nam và đất nước bị chia cắt 10 tháng 10 Giải phóng Thủ đô",
+  "date" : "13 tháng 3 - 7 tháng 5 năm 1954",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-292",
+  "name" : "Ngô Đình Diệm phế truất Bảo Đại, lên làm Tổng thống, lập nên Việt Nam Cộng hòa",
+  "date" : "1955",
+  "relatedHistoricalFigureIds" : [ "figure-8" ]
+}, {
+  "id" : "event-293",
+  "name" : "Phong trào Đồng khởi",
+  "date" : "1959–1960",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-294",
+  "name" : "thành lập Mặt trận Dân tộc Giải phóng miền Nam Việt Nam",
+  "date" : "20 tháng 12 năm 1960",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-295",
+  "name" : "thành lập Quân Giải phóng miền Nam Việt Nam",
+  "date" : "15 tháng 12 năm 1961",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-296",
+  "name" : "chiến dịch Chiến tranh đặc biệt",
+  "date" : "1961–1965",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-297",
+  "name" : "đảo chính lật đổ chính quyền Ngô Đình Diệm",
+  "date" : "1963",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-298",
+  "name" : "Mỹ bắt đầu đưa quân vào tham chiến tại miền Nam Việt Nam",
+  "date" : "8 tháng 3 năm 1965",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-299",
+  "name" : "chiến dịch Chiến tranh cục bộ",
+  "date" : "1965–1968",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-300",
+  "name" : "chiến dịch Việt Nam hóa chiến tranh",
+  "date" : "1968–1973",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-301",
+  "name" : "thành lập Cộng hòa Miền Nam Việt Nam, thủ đô Tây Ninh 2 tháng 9 Chủ tịch Hồ Chí Minh từ trần",
+  "date" : "8 tháng 6 năm 1969",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-302",
+  "name" : "Chiến dịch Điện Biên Phủ trên không",
+  "date" : "18 tháng 12 - 30 tháng 12 năm 1972",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-303",
+  "name" : "Hiệp định Paris, Mỹ rút quân khỏi Việt Nam",
+  "date" : "27 tháng 1 năm 1973",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-304",
+  "name" : "Chiến dịch Hồ Chí Minh 30 tháng 4 chính phủ Việt Nam Cộng hòa đầu hàng vô điều kiện Cộng hòa Miền Nam Việt Nam",
+  "date" : "26 tháng 4 - 2 tháng 5 năm 1975",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-305",
+  "name" : "thống nhất đất nước, đổi tên nước thành Cộng hòa xã hội chủ nghĩa Việt Nam",
+  "date" : "2 tháng 7 năm 1976",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-306",
+  "name" : "gia nhập Liên Hợp Quốc",
+  "date" : "20 tháng 9 năm 1977",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-307",
+  "name" : "chiến tranh biên giới Tây Nam",
+  "date" : "1975–1979",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-308",
+  "name" : "chiến tranh biên giới phía Bắc",
+  "date" : "1979",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-309",
+  "name" : "Đổi Mới",
+  "date" : "1986",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-310",
+  "name" : "bình thường hóa quan hệ với Trung Quốc",
+  "date" : "7 tháng 11 năm 1991",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-311",
+  "name" : "bình thường hóa quan hệ với Mỹ 28 tháng 7 gia nhập ASEAN",
+  "date" : "11 tháng 7 năm 1995",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-312",
+  "name" : "gia nhập APEC",
+  "date" : "14 tháng 11 năm 1998",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-313",
+  "name" : "gia nhập WTO",
+  "date" : "11 tháng 1 năm 2007",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "event-314",
+  "name" : "Đại dịch COVID-19",
+  "date" : "2020–2022",
+  "relatedHistoricalFigureIds" : [ ]
+} ]

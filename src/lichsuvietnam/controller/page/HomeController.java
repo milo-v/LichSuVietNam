@@ -1,4 +1,4 @@
-package lichsuvietnam.controller;
+package lichsuvietnam.controller.page;
 
 import javafx.fxml.FXML;
 

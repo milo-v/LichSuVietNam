@@ -1,0 +1,106 @@
+[ {
+  "id" : "period-21",
+  "name" : "Thời tiền sử",
+  "timeSpan" : "",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-22",
+  "name" : "Hồng Bàng",
+  "timeSpan" : "",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-23",
+  "name" : "An Dương Vương",
+  "timeSpan" : "",
+  "relatedHistoricalFigureIds" : [ "figure-5" ]
+}, {
+  "id" : "period-24",
+  "name" : "Bắc thuộc lần I",
+  "timeSpan" : "207 TCN – 40",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-25",
+  "name" : "Hai Bà Trưng",
+  "timeSpan" : "40 – 43",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-26",
+  "name" : "Bắc thuộc lần II",
+  "timeSpan" : "43 – 541",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-27",
+  "name" : "Nhà Tiền Lý",
+  "timeSpan" : "541 – 602",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-28",
+  "name" : "Bắc thuộc lần III",
+  "timeSpan" : "602 – 905",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-29",
+  "name" : "Tự chủ",
+  "timeSpan" : "905 – 938",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-30",
+  "name" : "Nhà Ngô",
+  "timeSpan" : "938 – 967",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-31",
+  "name" : "Nhà Đinh",
+  "timeSpan" : "968 – 980",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-32",
+  "name" : "Nhà Tiền Lê",
+  "timeSpan" : "980 – 1009",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-33",
+  "name" : "Nhà Lý",
+  "timeSpan" : "1009 – 1225",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-34",
+  "name" : "Nhà Trần",
+  "timeSpan" : "1225 – 1400",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-35",
+  "name" : "Nhà Hồ",
+  "timeSpan" : "1400 – 1407",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-36",
+  "name" : "Bắc thuộc lần IV",
+  "timeSpan" : "1407 – 1427",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-37",
+  "name" : "Nhà Hậu Lê Nhà Lê sơ (1428 – 1527) Lê trung hưng (1533 – 1789) Nhà Mạc (1527 – 1592) Trịnh–Nguyễn phân tranh",
+  "timeSpan" : "1428 – 1527",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-38",
+  "name" : "Nhà Tây Sơn",
+  "timeSpan" : "1778 – 1802",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-39",
+  "name" : "Nhà Nguyễn",
+  "timeSpan" : "1802 – 1945) Pháp thuộc (1887 – 1945) Đế quốc Việt Nam (1945",
+  "relatedHistoricalFigureIds" : [ "figure-8" ]
+}, {
+  "id" : "period-40",
+  "name" : "Chiến tranh Đông Dương",
+  "timeSpan" : "1945 – 1975",
+  "relatedHistoricalFigureIds" : [ ]
+}, {
+  "id" : "period-41",
+  "name" : "Cộng hòa Xã hội Chủ nghĩa Việt Nam",
+  "timeSpan" : "từ 1976",
+  "relatedHistoricalFigureIds" : [ ]
+} ]

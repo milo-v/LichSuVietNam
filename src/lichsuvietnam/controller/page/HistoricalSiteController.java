@@ -1,24 +1,30 @@
-package lichsuvietnam.controller;
+package lichsuvietnam.controller.page;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import lichsuvietnam.model.HistoricalPeriod;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
+import lichsuvietnam.controller.dialog.HistoricalSiteDialogController;
 import lichsuvietnam.model.HistoricalSite;
 import lichsuvietnam.service.dao.HistoricalDao;
 import lichsuvietnam.service.dao.JsonHistoricalDao;
 
-import java.nio.file.DirectoryStream;
+import java.io.IOException;
 
 public class HistoricalSiteController {
     public static final String SCENE_KEY = "historicalSite";
 
-    private ObservableList<HistoricalSite> historicalSites = FXCollections.observableArrayList();
+    public static ObservableList<HistoricalSite> historicalSites = FXCollections.observableArrayList();
     private FilteredList<HistoricalSite> filteredHistoricalSites = new FilteredList<>(historicalSites);
 
     @FXML
@@ -61,6 +67,31 @@ public class HistoricalSiteController {
         designatedDateColumn.setCellValueFactory(new PropertyValueFactory<>("designatedDate"));
 
         tableView.setItems(filteredHistoricalSites);
+
+        tableView.setRowFactory(table -> {
+            TableRow<HistoricalSite> row = new TableRow<>();
+            row.setOnMouseClicked(event -> {
+                if (event.getClickCount() == 2 && (!row.isEmpty()) ) {
+                    HistoricalSite historicalSite = row.getItem();
+
+                    Stage stage = new Stage();
+                    FXMLLoader loader = new FXMLLoader(getClass().
+                            getResource("/fxml/dialog/historical_site_dialog.fxml"));
+                    loader.setController(new HistoricalSiteDialogController(historicalSite));
+                    Parent parent = null;
+                    try {
+                        parent = loader.load();
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                    stage.getIcons().add(new Image(getClass().getResourceAsStream("/img/tombs.png")));
+                    stage.setScene(new Scene(parent));
+                    stage.setResizable(false);
+                    stage.show();
+                }
+            });
+            return row ;
+        });
     }
 
     private void initializeTextField() {

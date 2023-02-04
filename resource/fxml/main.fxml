@@ -73,7 +73,7 @@
                         <Insets bottom="10.0" top="10.0" />
                      </padding>
                      <graphic>
-                        <ImageView fx:id="historicalFigureButton" blendMode="SRC_ATOP" fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView blendMode="SRC_ATOP" fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/cheongsam.png" />
                            </image>

@@ -1,35 +1,24 @@
 package lichsuvietnam.controller;
 
-import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
-import java.util.concurrent.Future;
 
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import lichsuvietnam.model.HistoricalEvent;
-import lichsuvietnam.model.HistoricalFigure;
+import lichsuvietnam.controller.page.*;
 import lichsuvietnam.service.dao.HistoricalDao;
 import lichsuvietnam.service.dao.JsonHistoricalDao;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class MainController {
     private HistoricalDao jsonDao = new JsonHistoricalDao();
@@ -79,7 +68,7 @@ public class MainController {
     }
 
     public void initializeHome() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/home.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/page/home.fxml"));
         loader.setController(new HomeController());
         try {
             SceneManager.addScene(HomeController.SCENE_KEY, loader.load());
@@ -144,6 +133,7 @@ public class MainController {
             progressDialog.setTitle("Scraper");
             progressDialog.initModality(Modality.APPLICATION_MODAL);
             progressDialog.setOnCloseRequest(event -> event.consume());
+            progressDialog.getIcons().add(new Image(getClass().getResourceAsStream("/img/scrape.png")));
             progressDialog.show();
 
             task.setOnSucceeded(ex -> {
@@ -161,7 +151,7 @@ public class MainController {
     }
 
     private void initializeHistoricalFigure() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/historical_figure.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/page/historical_figure.fxml"));
         loader.setController(FIGURE_CONTROLLER);
         try {
             SceneManager.addScene(HistoricalFigureController.SCENE_KEY, loader.load());
@@ -171,7 +161,7 @@ public class MainController {
     }
 
     private void initializeHistoricalEvent() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/historical_event.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/page/historical_event.fxml"));
         loader.setController(EVENT_CONTROLLER);
         try {
             SceneManager.addScene(HistoricalEventController.SCENE_KEY, loader.load());
@@ -181,7 +171,7 @@ public class MainController {
     }
 
     private void initializeHistoricalPeriod() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/historical_period.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/page/historical_period.fxml"));
         loader.setController(PERIOD_CONTROLLER);
         try {
             SceneManager.addScene(HistoricalPeriodController.SCENE_KEY, loader.load());
@@ -191,7 +181,7 @@ public class MainController {
     }
 
     private void initializeHistoricalSite() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/historical_site.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/page/historical_site.fxml"));
         loader.setController(SITE_CONTROLLER);
         try {
             SceneManager.addScene(HistoricalSiteController.SCENE_KEY, loader.load());
@@ -201,7 +191,7 @@ public class MainController {
     }
 
     private void initializeFestival() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/festival.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/page/festival.fxml"));
         loader.setController(FESTIVAL_CONTROLLER);
         try {
             SceneManager.addScene(FestivalController.SCENE_KEY, loader.load());

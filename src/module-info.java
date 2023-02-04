@@ -13,10 +13,12 @@ module LichSuVietNam {
 	requires javafx.fxml;
 	requires javafx.controls;
 
+	opens lichsuvietnam.controller.dialog to javafx.fxml;
 	opens lichsuvietnam.controller to javafx.fxml;
 	opens lichsuvietnam.model to com.fasterxml.jackson.databind,javafx.base;
 
 	exports lichsuvietnam.model to com.fasterxml.jackson.databind;
 	exports lichsuvietnam to javafx.graphics;
     exports lichsuvietnam.service.dao to javafx.graphics;
+	opens lichsuvietnam.controller.page to javafx.fxml;
 }

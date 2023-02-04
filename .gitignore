@@ -30,4 +30,6 @@ local.properties
 # IntelliJ
 .idea/
 *.iml
+*.eml
+*.userlibraries
 out/

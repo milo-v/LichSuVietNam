@@ -1,30 +1,30 @@
-package lichsuvietnam.controller;
+package lichsuvietnam.controller.page;
 
-import javafx.beans.InvalidationListener;
 import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
+import lichsuvietnam.controller.dialog.HistoricalFigureDialogController;
 import lichsuvietnam.model.HistoricalFigure;
 import lichsuvietnam.service.dao.HistoricalDao;
 import lichsuvietnam.service.dao.JsonHistoricalDao;
 
-import java.nio.file.DirectoryStream;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.io.IOException;
 
 public class HistoricalFigureController {
     public final static String SCENE_KEY = "historicalFigure";
 
-    private ObservableList<HistoricalFigure> historicalFigures = FXCollections.observableArrayList();
+    public static ObservableList<HistoricalFigure> historicalFigures = FXCollections.observableArrayList();
     private FilteredList<HistoricalFigure> filteredHistoricalFigures = new FilteredList<>(historicalFigures);
     @FXML
     private TextField searchTextField;
@@ -71,6 +71,32 @@ public class HistoricalFigureController {
         occupationColumn.setCellValueFactory(new PropertyValueFactory<>("occupation"));
 
         tableView.setItems(filteredHistoricalFigures);
+
+
+        tableView.setRowFactory(tv -> {
+            TableRow<HistoricalFigure> row = new TableRow<>();
+            row.setOnMouseClicked(event -> {
+                if (event.getClickCount() == 2 && (!row.isEmpty()) ) {
+                    HistoricalFigure historicalFigure = row.getItem();
+
+                    Stage stage = new Stage();
+                    FXMLLoader loader = new FXMLLoader(getClass().
+                            getResource("/fxml/dialog/historical_figure_dialog.fxml"));
+                    loader.setController(new HistoricalFigureDialogController(historicalFigure));
+                    Parent parent = null;
+                    try {
+                        parent = loader.load();
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                    stage.getIcons().add(new Image(getClass().getResourceAsStream("/img/cheongsam.png")));
+                    stage.setScene(new Scene(parent));
+                    stage.setResizable(false);
+                    stage.show();
+                }
+            });
+            return row ;
+        });
     }
 
     public void initializeSearchTextField() {

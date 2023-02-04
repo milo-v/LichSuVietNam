@@ -52,7 +52,7 @@ public class NguoiKeSuHistoricalScraper implements HistoricalScraper {
                             .replaceAll(
                                     "[^ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶ" +
                                             "ẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễếệỉị" +
-                                            "ọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹa-zA-Z\\s]"
+                                            "ọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựýỳỵỷỹa-zA-Z\\s]"
                                     , "")
                             .trim());
                     if (info.get(1).text().startsWith("Vua")) {

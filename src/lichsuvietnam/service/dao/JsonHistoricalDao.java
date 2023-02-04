@@ -83,13 +83,13 @@ public class JsonHistoricalDao implements HistoricalDao {
     }
 
     @Override
-    public ArrayList<HistoricalFigure> getHistoricalFigures(String path) {
+    public ArrayList<HistoricalFigure> getHistoricalFigures() {
         ArrayList<HistoricalFigure> historicalFigures = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
 
         try {
             historicalFigures = mapper.readValue(
-                    Paths.get(path).toFile(),
+                    Paths.get(FIGURE_PATH).toFile(),
                     new TypeReference<List<HistoricalFigure>>() {});
         } catch (IOException e) {
             e.printStackTrace();
@@ -99,13 +99,13 @@ public class JsonHistoricalDao implements HistoricalDao {
     }
 
     @Override
-    public ArrayList<HistoricalSite> getHistoricalSites(String path) {
+    public ArrayList<HistoricalSite> getHistoricalSites() {
         ArrayList<HistoricalSite> historicalSites = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
 
         try {
             historicalSites = mapper.readValue(
-                    Paths.get(path).toFile(),
+                    Paths.get(SITE_PATH).toFile(),
                     new TypeReference<List<HistoricalSite>>() {});
         } catch (IOException e) {
             e.printStackTrace();
@@ -115,13 +115,13 @@ public class JsonHistoricalDao implements HistoricalDao {
     }
 
     @Override
-    public ArrayList<HistoricalEvent> getHistoricalEvents(String path) {
+    public ArrayList<HistoricalEvent> getHistoricalEvents() {
         ArrayList<HistoricalEvent> historicalEvents = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
 
         try {
             historicalEvents = mapper.readValue(
-                    Paths.get(path).toFile(),
+                    Paths.get(EVENT_PATH).toFile(),
                     new TypeReference<List<HistoricalEvent>>() {});
         } catch (IOException e) {
             e.printStackTrace();
@@ -131,13 +131,13 @@ public class JsonHistoricalDao implements HistoricalDao {
     }
 
     @Override
-    public ArrayList<HistoricalPeriod> getHistoricalPeriods(String path) {
+    public ArrayList<HistoricalPeriod> getHistoricalPeriods() {
         ArrayList<HistoricalPeriod> historicalPeriods = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
 
         try {
             historicalPeriods = mapper.readValue(
-                    Paths.get(path).toFile(),
+                    Paths.get(PERIOD_PATH).toFile(),
                     new TypeReference<List<HistoricalPeriod>>() {});
         } catch (IOException e) {
             e.printStackTrace();
@@ -147,13 +147,13 @@ public class JsonHistoricalDao implements HistoricalDao {
     }
 
     @Override
-    public ArrayList<Festival> getFestivals(String path) {
+    public ArrayList<Festival> getFestivals() {
         ArrayList<Festival> historicalFestivals = new ArrayList<>();
         ObjectMapper mapper = new ObjectMapper();
 
         try {
             historicalFestivals = mapper.readValue(
-                    Paths.get(path).toFile(),
+                    Paths.get(FESTIVAL_PATH).toFile(),
                     new TypeReference<List<Festival>>() {});
         } catch (IOException e) {
             e.printStackTrace();

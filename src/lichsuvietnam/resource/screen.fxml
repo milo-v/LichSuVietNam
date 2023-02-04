@@ -291,8 +291,13 @@
                                  </image>
                               </ImageView>
                               <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Tìm kiếm" />
+<<<<<<< HEAD:src/lichsuvietnam/resource/screen.fxml
+                              <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+                              <Button fx:id="confirmButtonFestival" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="OK" />
+=======
                               <TextField fx:id="searchFestival" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
                               <Button fx:id="confirmButtonFestival" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickFestival" text="OK" />
+>>>>>>> master:src/lichsuvietnam/view/screen.fxml
                            </children>
                            <BorderPane.margin>
                               <Insets />

@@ -1,0 +1,18 @@
+.radio-button .radio {
+    -fx-padding: 0px;
+}
+
+.radio-button .dot {
+    -fx-padding: 0px;
+}
+
+.radio-button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #d4a257;
+}
+
+.radio-button:selected {
+    -fx-background-color: #c79a56;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}

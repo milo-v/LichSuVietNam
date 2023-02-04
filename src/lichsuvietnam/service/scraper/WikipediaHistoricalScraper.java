@@ -187,7 +187,8 @@ public class WikipediaHistoricalScraper implements HistoricalScraper {
                     .userAgent("Jsoup client").timeout(20000).get();
             Elements lstFestivals = document.selectXpath(
                     "/html/body/div[1]/div/div[3]/main/div[3]/div[3]/div[1]/table[2]/tbody/tr[position()>1]");
-            // System.out.println(lstFestivals);
+            // /html/body/div[1]/div/div[3]/main/div[3]/div[4]/div[1]/table[2]/tbody
+            System.out.println(lstFestivals);
 
             for (Element element : lstFestivals) {
                 // System.out.println(element);

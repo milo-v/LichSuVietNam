@@ -129,7 +129,7 @@
                            </padding></HBox>
                      </top>
                      <center>
-                        <TableView fx:id="tableHF" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                        <TableView fx:id="tableHF" onMouseClicked="#handleRowClickHF" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                           <columns>
                             <TableColumn fx:id="colNameHF" prefWidth="240.0" text="Tên" />
                             <TableColumn fx:id="colDateOfBirth" minWidth="0.0" prefWidth="180.0" text="Ngày sinh" />
@@ -173,7 +173,7 @@
                         </HBox>
                      </top>
                      <center>
-                        <TableView fx:id="tableHE" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                        <TableView fx:id="tableHE" onMouseClicked="#handleRowClickHE" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                           <columns>
                             <TableColumn fx:id="colNameHE" prefWidth="310.0" text="Tên" />
                             <TableColumn fx:id="colDateHE" prefWidth="310.0" text="Thời gian" />
@@ -216,7 +216,7 @@
                         </HBox>
                      </top>
                      <center>
-                        <TableView fx:id="tableHS" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                        <TableView fx:id="tableHS" onMouseClicked="#handleRowClickHS" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                           <columns>
                             <TableColumn fx:id="colNameHS" prefWidth="310.0" text="Tên" />
                             <TableColumn fx:id="colDateHS" prefWidth="310.0" text="Thời gian" />
@@ -259,7 +259,7 @@
                         </HBox>
                      </top>
                      <center>
-                        <TableView fx:id="tableHP" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                        <TableView fx:id="tableHP" onMouseClicked="#handleRowClickHP" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                           <columns>
                             <TableColumn fx:id="colNameHP" prefWidth="410.0" text="Tên" />
                             <TableColumn fx:id="colTimeSpanHP" prefWidth="388.0" text="Khoảng thời gian" />
@@ -303,7 +303,7 @@
                         </HBox>
                      </top>
                      <center>
-                        <TableView fx:id="tableFestival" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                        <TableView fx:id="tableFestival" onMouseClicked="#handleRowClickFestival" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                           <columns>
                             <TableColumn fx:id="colNameFestival" prefWidth="310.0" text="Ngày diễn ra" />
                             <TableColumn fx:id="colLocationFestival" prefWidth="310.0" text="Vị trí" />

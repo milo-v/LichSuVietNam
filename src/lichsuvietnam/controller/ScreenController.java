@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,6 +13,8 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.scene.control.ButtonType;
@@ -21,6 +24,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import lichsuvietnam.model.Festival;
 import lichsuvietnam.model.HistoricalEvent;
 import lichsuvietnam.model.HistoricalFigure;
@@ -291,25 +295,189 @@ public class ScreenController {
 	void handleClickUpdate(ActionEvent event) {
 		if (event.getSource() == updateButton) {
 			JsonHistoricalDao scraperService = new JsonHistoricalDao();
-			Dialog<String> dialog1 = new Dialog<>();
+			Alert dialog1 = new Alert(AlertType.CONFIRMATION);
 			dialog1.setTitle("Lịch sử Việt Nam");
+			dialog1.setHeaderText("Cập nhật dữ liệu");
 			ButtonType typeOK = new ButtonType("OK", ButtonData.OK_DONE);
 			ButtonType typeCancel = new ButtonType("Cancel", ButtonData.CANCEL_CLOSE);
 			dialog1.setContentText("Nhấn OK để bắt đầu cập nhật dữ liệu");
-			dialog1.getDialogPane().getButtonTypes().add(typeOK);
 			// dialog1.getDialogPane().getButtonTypes().add(typeCancel);
-			dialog1.showAndWait();
-			System.out.println("Update button pressed");
-			scraperService.updateAll();
-			loadDataFromJson();
-			// dialog.close();
-			Dialog<String> dialog2 = new Dialog<>();
-			dialog2.setTitle("Lịch sử Việt Nam");
-			dialog2.setContentText("Đã cập nhật xong dữ liệu");
-			dialog2.getDialogPane().getButtonTypes().add(typeOK);
-			dialog2.show();
-			
+			dialog1.showAndWait().ifPresent(response -> {
+				if (response == ButtonType.OK) {
+					scraperService.updateAll();
+					loadDataFromJson();
+					// dialog.close();
+					Dialog<String> dialog2 = new Dialog<>();
+					dialog2.setTitle("Lịch sử Việt Nam");
+					dialog2.setContentText("Đã cập nhật xong dữ liệu");
+					dialog2.getDialogPane().getButtonTypes().add(typeOK);
+					dialog2.show();
+				}
+			});
+			// if (dialog1.bu)
+
 			// dialog.show();
+		}
+	}
+
+	@FXML
+	void handleRowClickHF(MouseEvent event) {
+		if (event.getClickCount() == 2) {
+			Dialog<String> dialog = new Dialog<>();
+			HistoricalFigure figure = tableHF.getSelectionModel().getSelectedItem();
+			dialog.setTitle(figure.getName());
+			String content = "";
+			if (figure.getRelatedHistoricalPeriodId() != null) {
+				content += "Giai đoạn lịch sử liên quan:\n";
+				for (int i = 0; i < this.historicalPeriods.size(); i++) {
+					if (figure.getRelatedHistoricalPeriodId().equals(this.historicalPeriods.get(i).getId())) {
+						content += " + " + this.historicalPeriods.get(i).getName() + "\n";
+					}
+				}
+			}
+			if (figure.getRelatedHistoricalEventIds().size() > 0) {
+				content += "Sự kiện lịch sử liên quan:\n";
+				for (int i = 0; i < figure.getRelatedHistoricalEventIds().size(); i++) {
+					for (int j = 0; j < this.historicalEvents.size(); j++) {
+						if (figure.getRelatedHistoricalEventIds().get(i).equals(this.historicalEvents.get(j).getId())) {
+							content += " + " + this.historicalEvents.get(j).getName() + "\n";
+						}
+					}
+				}
+			}
+			if (figure.getRelatedFestivalIds().size() > 0) {
+				content += "Lễ hội liên quan:\n";
+				for (int i = 0; i < figure.getRelatedFestivalIds().size(); i++) {
+					for (int j = 0; j < this.festivals.size(); j++) {
+						if (figure.getRelatedFestivalIds().get(i).equals(this.festivals.get(j).getId())) {
+							content += " + " + this.festivals.get(j).getName() + "\n";
+						}
+					}
+				}
+			}
+			if (figure.getRelatedHistoricalSiteIds().size() > 0) {
+				content += "Di tích lịch sử liên quan:\n";
+				for (int i = 0; i < figure.getRelatedHistoricalSiteIds().size(); i++) {
+					for (int j = 0; j < this.historicalSites.size(); j++) {
+						if (figure.getRelatedHistoricalSiteIds().get(i).equals(this.historicalSites.get(j).getId())) {
+							content += " + " + this.historicalSites.get(j).getName() + "\n";
+						}
+					}
+				}
+			}
+			content += "Hết";
+			dialog.setContentText(content);
+			ButtonType typeOK = new ButtonType("OK", ButtonData.OK_DONE);
+			dialog.getDialogPane().getButtonTypes().add(typeOK);
+			dialog.show();
+		}
+	}
+	
+	@FXML
+	void handleRowClickHE(MouseEvent event) {
+		if (event.getClickCount() == 2) {
+			Dialog<String> dialog = new Dialog<>();
+			HistoricalEvent historicalEvent = tableHE.getSelectionModel().getSelectedItem();
+			dialog.setTitle(historicalEvent.getName());
+			String content = "";
+			
+			if (historicalEvent.getRelatedHistoricalFigureIds().size() > 0) {
+				content += "Nhân vật lịch sử liên quan:\n";
+				for (int i = 0; i < historicalEvent.getRelatedHistoricalFigureIds().size(); i++) {
+					for (int j = 0; j < this.historicalFigures.size(); j++) {
+						if (historicalEvent.getRelatedHistoricalFigureIds().get(i).equals(this.historicalFigures.get(j).getId())) {
+							content += " + " + this.historicalFigures.get(j).getName() + "\n";
+						}
+					}
+				}
+			}
+			
+			content += "Hết";
+			dialog.setContentText(content);
+			ButtonType typeOK = new ButtonType("OK", ButtonData.OK_DONE);
+			dialog.getDialogPane().getButtonTypes().add(typeOK);
+			dialog.show();
+		}
+	}
+	
+	@FXML
+	void handleRowClickHS(MouseEvent event) {
+		if (event.getClickCount() == 2) {
+			Dialog<String> dialog = new Dialog<>();
+			HistoricalSite site = tableHS.getSelectionModel().getSelectedItem();
+			dialog.setTitle(site.getName());
+			String content = "";
+			
+			if (site.getRelatedHistoricalFigureIds().size() > 0) {
+				content += "Nhân vật lịch sử liên quan:\n";
+				for (int i = 0; i < site.getRelatedHistoricalFigureIds().size(); i++) {
+					for (int j = 0; j < this.historicalFigures.size(); j++) {
+						if (site.getRelatedHistoricalFigureIds().get(i).equals(this.historicalFigures.get(j).getId())) {
+							content += " + " + this.historicalFigures.get(j).getName() + "\n";
+						}
+					}
+				}
+			}
+			
+			content += "Hết";
+			dialog.setContentText(content);
+			ButtonType typeOK = new ButtonType("OK", ButtonData.OK_DONE);
+			dialog.getDialogPane().getButtonTypes().add(typeOK);
+			dialog.show();
+		}
+	}
+	
+	@FXML
+	void handleRowClickHP(MouseEvent event) {
+		if (event.getClickCount() == 2) {
+			Dialog<String> dialog = new Dialog<>();
+			HistoricalPeriod period = tableHP.getSelectionModel().getSelectedItem();
+			dialog.setTitle(period.getName());
+			String content = "";
+			
+			if (period.getRelatedHistoricalFigureIds().size() > 0) {
+				content += "Nhân vật lịch sử liên quan:\n";
+				for (int i = 0; i < period.getRelatedHistoricalFigureIds().size(); i++) {
+					for (int j = 0; j < this.historicalFigures.size(); j++) {
+						if (period.getRelatedHistoricalFigureIds().get(i).equals(this.historicalFigures.get(j).getId())) {
+							content += " + " + this.historicalFigures.get(j).getName() + "\n";
+						}
+					}
+				}
+			}
+			
+			content += "Hết";
+			dialog.setContentText(content);
+			ButtonType typeOK = new ButtonType("OK", ButtonData.OK_DONE);
+			dialog.getDialogPane().getButtonTypes().add(typeOK);
+			dialog.show();
+		}
+	}
+	
+	@FXML
+	void handleRowClickFestival(MouseEvent event) {
+		if (event.getClickCount() == 2) {
+			Dialog<String> dialog = new Dialog<>();
+			Festival festival = tableFestival.getSelectionModel().getSelectedItem();
+			dialog.setTitle(festival.getName());
+			String content = "";
+			
+			if (festival.getRelatedHistoricalFigureIds().size() > 0) {
+				content += "Nhân vật lịch sử liên quan:\n";
+				for (int i = 0; i < festival.getRelatedHistoricalFigureIds().size(); i++) {
+					for (int j = 0; j < this.historicalFigures.size(); j++) {
+						if (festival.getRelatedHistoricalFigureIds().get(i).equals(this.historicalFigures.get(j).getId())) {
+							content += " + " + this.historicalFigures.get(j).getName() + "\n";
+						}
+					}
+				}
+			}
+			
+			content += "Hết";
+			dialog.setContentText(content);
+			ButtonType typeOK = new ButtonType("OK", ButtonData.OK_DONE);
+			dialog.getDialogPane().getButtonTypes().add(typeOK);
+			dialog.show();
 		}
 	}
 

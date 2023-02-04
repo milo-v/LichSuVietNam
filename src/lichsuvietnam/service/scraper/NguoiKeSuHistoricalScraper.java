@@ -18,7 +18,7 @@ public class NguoiKeSuHistoricalScraper implements HistoricalScraper {
     public ArrayList<HistoricalFigure> scrapeHistoricalFigures() {
         ArrayList<HistoricalFigure> historicalFigures = new ArrayList<>();
         final int PAGE_NUM = 1451;
-        for (int page = 0; page <= 10; page++) {
+        for (int page = 0; page <= PAGE_NUM; page++) {
             HistoricalFigure figure = new HistoricalFigure();
 
             try {

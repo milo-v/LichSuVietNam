@@ -287,7 +287,7 @@
                               </ImageView>
                               <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Tìm kiếm" />
                               <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
-                              <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="OK" />
+                              <Button fx:id="confirmButtonFestival" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="OK" />
                            </children>
                            <BorderPane.margin>
                               <Insets />

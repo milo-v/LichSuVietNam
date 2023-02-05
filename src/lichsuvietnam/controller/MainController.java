@@ -63,7 +63,6 @@ public class MainController {
         initializeHistoricalSite();
         initializeButtons();
 
-
         SceneManager.setCurrentScene(HomeController.SCENE_KEY);
     }
 

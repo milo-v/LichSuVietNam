@@ -23,7 +23,7 @@ import java.io.IOException;
 
 public class HistoricalEventController {
     public static final String SCENE_KEY = "historicalEvent";
-    public static ObservableList<HistoricalEvent> historicalEvents = FXCollections.observableArrayList();
+    private ObservableList<HistoricalEvent> historicalEvents = FXCollections.observableArrayList();
     private FilteredList<HistoricalEvent> filteredHistoricalEvents =  new FilteredList<>(historicalEvents);
 
     @FXML

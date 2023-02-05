@@ -1,6 +1,7 @@
 package lichsuvietnam;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -17,6 +18,7 @@ public class Main extends Application {
 		stage.setScene(scene);
 		stage.setMaximized(true);
 		stage.setTitle("Lịch sử Việt Nam");
+		stage.setOnCloseRequest(e -> Platform.exit());
 		stage.show();
 	}
 	

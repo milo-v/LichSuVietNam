@@ -7,6 +7,8 @@ import javafx.scene.text.Font;
 import lichsuvietnam.controller.page.HistoricalFigureController;
 import lichsuvietnam.model.Festival;
 import lichsuvietnam.model.HistoricalFigure;
+import lichsuvietnam.service.dao.HistoricalDao;
+import lichsuvietnam.service.dao.JsonHistoricalDao;
 
 public class FestivalDialogController {
 
@@ -35,11 +37,15 @@ public class FestivalDialogController {
         locationLabel.setText(festival.getLocation());
         dateLabel.setText(festival.getDate());
 
-        for (HistoricalFigure historicalFigure : HistoricalFigureController.historicalFigures) {
+        HistoricalDao jsonDao = new JsonHistoricalDao();
+
+        int counter = 1;
+        for (HistoricalFigure historicalFigure : jsonDao.getHistoricalFigures()) {
             if (festival.getRelatedHistoricalFigureIds().contains(historicalFigure.getId())) {
-                Label figure = new Label(historicalFigure.getName());
+                Label figure = new Label(counter + ". " + historicalFigure.getName());
                 figure.setFont(new Font(14));
                 relatedFiguresVBox.getChildren().add(figure);
+                ++counter;
             }
         }
     }

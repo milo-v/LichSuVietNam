@@ -24,7 +24,7 @@ import java.io.IOException;
 public class HistoricalFigureController {
     public final static String SCENE_KEY = "historicalFigure";
 
-    public static ObservableList<HistoricalFigure> historicalFigures = FXCollections.observableArrayList();
+    private ObservableList<HistoricalFigure> historicalFigures = FXCollections.observableArrayList();
     private FilteredList<HistoricalFigure> filteredHistoricalFigures = new FilteredList<>(historicalFigures);
     @FXML
     private TextField searchTextField;

@@ -24,7 +24,7 @@ import java.io.IOException;
 public class HistoricalSiteController {
     public static final String SCENE_KEY = "historicalSite";
 
-    public static ObservableList<HistoricalSite> historicalSites = FXCollections.observableArrayList();
+    private ObservableList<HistoricalSite> historicalSites = FXCollections.observableArrayList();
     private FilteredList<HistoricalSite> filteredHistoricalSites = new FilteredList<>(historicalSites);
 
     @FXML

@@ -24,7 +24,7 @@ import java.io.IOException;
 public class HistoricalPeriodController {
     public static final String SCENE_KEY = "historicalPeriod";
 
-    public static ObservableList<HistoricalPeriod> historicalPeriods = FXCollections.observableArrayList();
+    private ObservableList<HistoricalPeriod> historicalPeriods = FXCollections.observableArrayList();
     private FilteredList<HistoricalPeriod> filteredHistoricalPeriods = new FilteredList<>(historicalPeriods);
 
     @FXML

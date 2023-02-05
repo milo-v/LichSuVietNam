@@ -80,7 +80,7 @@ public class NguoiKeSuHistoricalScraper implements HistoricalScraper {
                 e.printStackTrace();
             }
 
-            if (figure.getName() != null) {
+            if (figure.getName() != null && !figure.getName().isBlank() && !figure.getName().isEmpty()) {
                 historicalFigures.add(figure);
             }
         }

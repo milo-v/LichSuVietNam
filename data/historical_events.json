@@ -97,7 +97,7 @@
   "id" : "event-177",
   "name" : "An Dương Vương thôn tính Văn Lang, thành lập quốc gia Âu Lạc",
   "date" : "207 TCN",
-  "relatedHistoricalFigureIds" : [ "figure-5" ]
+  "relatedHistoricalFigureIds" : [ "figure-44" ]
 }, {
   "id" : "event-178",
   "name" : "Chiến tranh Tần-Việt",
@@ -157,7 +157,7 @@
   "id" : "event-189",
   "name" : "Khởi nghĩa Bà Triệu",
   "date" : "246 - 248",
-  "relatedHistoricalFigureIds" : [ "figure-7" ]
+  "relatedHistoricalFigureIds" : [ "figure-46" ]
 }, {
   "id" : "event-190",
   "name" : "Chiến tranh Tấn – Ngô",
@@ -637,7 +637,7 @@
   "id" : "event-285",
   "name" : "Nhật đảo chính thực dân Pháp 11 thành lập Đế quốc Việt Nam, phụ thuộc Đế quốc Nhật Bản 14 tháng 8 - 30 tháng 8 cách mạng tháng Tám 23 tháng 8 Đế quốc Việt Nam sụp đổ 30 tháng 8 Bảo Đại thoái vị",
   "date" : "tháng 3 năm 1945",
-  "relatedHistoricalFigureIds" : [ "figure-8" ]
+  "relatedHistoricalFigureIds" : [ "figure-47" ]
 }, {
   "id" : "event-286",
   "name" : "Hồ Chí Minh tuyên bố độc lập, thành lập nước Việt Nam Dân chủ Cộng hòa 8 tháng 9 phát động phong trào Bình dân học vụ 23 tháng 9 quân Pháp nổ súng tại Sài Gòn, bắt đầu cuộc chiến tranh xâm lược Việt Nam lần 2 23 tháng 9 Trần Văn Giàu kêu gọi Nam Bộ kháng chiến",
@@ -657,7 +657,7 @@
   "id" : "event-289",
   "name" : "Pháp lập nên Quốc gia Việt Nam, quốc trưởng Bảo Đại, thủ đô Sài Gòn",
   "date" : "14 tháng 6 năm 1949",
-  "relatedHistoricalFigureIds" : [ "figure-8" ]
+  "relatedHistoricalFigureIds" : [ "figure-47" ]
 }, {
   "id" : "event-290",
   "name" : "Mỹ bắt đầu can thiệp quân sự vào Việt Nam 16 tháng 9–17 tháng 10 Chiến dịch Biên giới",
@@ -672,7 +672,7 @@
   "id" : "event-292",
   "name" : "Ngô Đình Diệm phế truất Bảo Đại, lên làm Tổng thống, lập nên Việt Nam Cộng hòa",
   "date" : "1955",
-  "relatedHistoricalFigureIds" : [ "figure-8" ]
+  "relatedHistoricalFigureIds" : [ "figure-47" ]
 }, {
   "id" : "event-293",
   "name" : "Phong trào Đồng khởi",
